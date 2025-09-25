@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Training from './sections/AboutUS/Training';
 import {
   Menu,
   X,
@@ -503,6 +504,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/contact' element={<Contactpage />} />
+          <Route path='/Training' element={<Training />} />
         </Routes>
         <Footer />
       </BrowserRouter>
