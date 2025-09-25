@@ -25,6 +25,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Footer from './layout/Footer';
 import Contactpage from './pages/Contactpage';
+import Aboutpage from './pages/Aboutpage';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -503,6 +504,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/contact' element={<Contactpage />} />
+          <Route path='/about' element={<Aboutpage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
