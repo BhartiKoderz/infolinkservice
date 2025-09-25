@@ -32,9 +32,9 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-50">
             {/* DESKTOP NAVBAR */}
             <div
-                className={`hidden lg:flex items-center justify-between transition-all duration-500 ${isScrolled
-                    ? "max-w-7xl mx-auto mt-2 bg-white rounded-2xl shadow-md py-2 px-6"
-                    : "w-full bg-white py-3 px-8"
+                className={`hidden lg:flex items-center bg-white justify-between transition-all duration-500 ${isScrolled
+                    ? "max-w-5xl  mx-auto mt-2 rounded-2xl shadow-md py-2 px-6"
+                    : "w-full  py-3 px-8"
                     }`}
             >
                 {/* Logo */}
