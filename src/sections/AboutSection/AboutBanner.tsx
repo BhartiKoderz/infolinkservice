@@ -1,8 +1,4 @@
-
-
-import React from "react";
-
-const Banner = () => {
+const AboutBanner = () => {
   return (
     <section className="relative bg-[#1F497D] text-white pt-28 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
       {/* Background decorative shapes */}
@@ -15,13 +11,30 @@ const Banner = () => {
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left z-10">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-            Building Careers & Connecting <span className="text-yellow-300">Talent</span>
+            From <span className="text-yellow-300">Rural</span> Aspiration to{" "}
+            <span className="text-yellow-300">Corporate</span> Success
           </h1>
           <p className="text-lg sm:text-xl mb-8 text-blue-100">
-            INFOLINK helps job seekers find opportunities and connects companies
-            with the right talent through training programs and mega job fairs.
+            Over 13 years of connecting rural aspirations to corporate success.
+            With 100+ job fairs, 1000+ industry partners, and a vision of
+            Unemployment-Free India.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+
+          <div className="mb-8 flex flex-wrap gap-6 justify-center lg:justify-start">
+            <div className="bg-white/10 backdrop-blur-lg rounded-xl px-6 py-4 text-center shadow">
+              <h3 className="text-2xl font-bold text-yellow-300">13+</h3>
+              <p className="text-sm">Years of Trust</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-lg rounded-xl px-6 py-4 text-center shadow">
+              <h3 className="text-2xl font-bold text-yellow-300">100+</h3>
+              <p className="text-sm">Job Fairs</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-lg rounded-xl px-6 py-4 text-center shadow">
+              <h3 className="text-2xl font-bold text-yellow-300">1000+</h3>
+              <p className="text-sm">Industry Partners</p>
+            </div>
+          </div>
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
               href="/join-job-fair"
               className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold shadow hover:bg-yellow-500 transition"
@@ -34,7 +47,7 @@ const Banner = () => {
             >
               Explore Training
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Image / Illustration */}
@@ -44,12 +57,10 @@ const Banner = () => {
             alt="Job Fair Banner"
             className="rounded-2xl shadow-2xl max-w-full"
           />
-        
         </div>
       </div>
     </section>
   );
 };
 
-export default Banner;
-
+export default AboutBanner;

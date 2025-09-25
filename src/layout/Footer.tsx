@@ -22,7 +22,7 @@ function Footer() {
                             We connect aspirations with opportunities, creating success stories that inspire.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#1F497D] transition-colors">
+                            <a href="#" className="w-10 shadow-[8px_8px_16px_#1F497D,-8px_-8px_16px_pink-600] h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#1F497D] transition-colors">
                                 <Facebook className="h-5 w-5" />
                             </a>
                             <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-400 transition-colors">
