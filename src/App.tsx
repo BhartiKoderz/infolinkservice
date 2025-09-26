@@ -9,6 +9,7 @@ import Contactpage from './pages/Contactpage';
 import Aboutpage from './pages/Aboutpage';
 import Jobfairpage from './pages/Jobfairpage';
 import CampusDrives from './pages/Campusdrive';
+import Testimonials from './pages/Testimonial';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/about' element={<Aboutpage/>}/>
           <Route path='/job-fairs' element={<Jobfairpage/>}/>
           <Route path='/campus-drive' element={<CampusDrives/>}/>
+          <Route path='/testimonial' element={<Testimonials/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
