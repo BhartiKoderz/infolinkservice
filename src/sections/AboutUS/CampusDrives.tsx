@@ -28,29 +28,41 @@ const CampusDriveCarousel: React.FC = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
-      {
-        breakpoint: 1024, // tablet
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 640, // mobile
-        settings: { slidesToShow: 1 },
-      },
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 640, settings: { slidesToShow: 1 } },
     ],
   };
 
   return (
     <div className="pt-24 px-6 bg-gray-50 min-h-screen">
-      <h1 className="text-4xl font-bold text-center text-blue-800 mb-10">
+      {/* Page Heading */}
+      <h1
+        className="text-4xl font-bold text-center text-blue-800 mb-10"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
         Campus Drives
       </h1>
 
+      {/* Carousel */}
       <Slider {...settings} className="max-w-6xl mx-auto">
         {campusDrives.map((drive, index) => (
           <div key={index} className="p-4">
             <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition h-48 flex flex-col justify-center text-center">
-              <h2 className="text-lg font-semibold text-blue-600 mb-2">{drive.college}</h2>
-              <p className="text-gray-600">{drive.date}</p>
+              {/* College Name */}
+              <h2
+                className="text-lg font-semibold text-blue-600 mb-2"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                {drive.college}
+              </h2>
+
+              {/* Date */}
+              <p
+                className="text-gray-600"
+                style={{ fontFamily: "Montserrat, sans-serif" }}
+              >
+                {drive.date}
+              </p>
             </div>
           </div>
         ))}
@@ -60,6 +72,7 @@ const CampusDriveCarousel: React.FC = () => {
 };
 
 export default CampusDriveCarousel;
+
 
 
 

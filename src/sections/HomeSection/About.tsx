@@ -1,79 +1,111 @@
-import React from "react";
-import { Users, Award, Building2,  CheckCircle2 } from 'lucide-react'
+
+import { Users, Award, Building2, CheckCircle2 } from "lucide-react";
 
 const About = () => {
-    return (
-        <section id="about" className="py-20 bg-white relative">
-            <div className="max-w-7xl mx-auto px-6">
-                {/* Section Heading */}
-                <div className="text-center mb-16">
-                    <span className="inline-block bg-[#1F497D] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
-                        100% Placement After Training
-                    </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        About <span className="text-[#1F497D]">Us</span>
-                    </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        With over a decade of experience, we’re the leading placement and training
-                        firm dedicated to bridging the gap between education and employment.
-                    </p>
+  return (
+    <section id="about" className="py-20 bg-white relative">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Section Heading */}
+        <div className="text-center mb-16">
+          <span className="inline-block bg-[#1F497D] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
+            100% Placement After Training
+          </span>
+          <h2
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            About <span className="text-[#1F497D]">Us</span>
+          </h2>
+          <p
+            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
+            With over a decade of experience, we’re the leading placement and training
+            firm dedicated to bridging the gap between education and employment.
+          </p>
+        </div>
+
+        {/* Content Grid */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Image */}
+          <div>
+            <img
+              src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Professional team meeting"
+              className="rounded-2xl shadow-2xl"
+            />
+          </div>
+
+          {/* Content */}
+          <div>
+            <h3
+              className="text-3xl font-bold text-gray-900 mb-6"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              Empowering Careers Since 2010
+            </h3>
+            <p
+              className="text-gray-600 mb-8 leading-relaxed"
+              style={{ fontFamily: "Montserrat, sans-serif" }}
+            >
+              We specialize in creating meaningful connections between talented individuals
+              and leading companies. Our comprehensive approach combines industry expertise
+              with personalized guidance to ensure successful career transitions.
+            </p>
+
+            {/* Highlights */}
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Award className="h-5 w-5 text-[#1F497D]" />
                 </div>
-
-                {/* Content Grid */}
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                    {/* Image */}
-                    <div>
-                        <img
-                            src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800"
-                            alt="Professional team meeting"
-                            className="rounded-2xl shadow-2xl"
-                        />
-                    </div>
-
-                    {/* Content */}
-                    <div>
-                        <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                            Empowering Careers Since 2010
-                        </h3>
-                        <p className="text-gray-600 mb-8 leading-relaxed">
-                            We specialize in creating meaningful connections between talented individuals
-                            and leading companies. Our comprehensive approach combines industry expertise
-                            with personalized guidance to ensure successful career transitions.
-                        </p>
-
-                        {/* Highlights */}
-                        <div className="space-y-4">
-                            <div className="flex items-center space-x-3">
-                                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                                    <Award className="h-5 w-5 text-[#1F497D]" />
-                                </div>
-                                <span className="text-gray-700 text-lg">10+ Years of Excellence</span>
-                            </div>
-                            <div className="flex items-center space-x-3">
-                                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                                    <Users className="h-5 w-5 text-[#1F497D]" />
-                                </div>
-                                <span className="text-gray-700 text-lg">50,000+ Successful Placements</span>
-                            </div>
-                            <div className="flex items-center space-x-3">
-                                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                                    <Building2 className="h-5 w-5 text-[#1F497D]" />
-                                </div>
-                                <span className="text-gray-700 text-lg">500+ Partner Companies</span>
-                            </div>
-                            <div className="flex items-center space-x-3">
-                                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                                    <CheckCircle2 className="h-5 w-5 text-green-600" />
-                                </div>
-                                <span className="text-gray-700 text-lg font-semibold">
-                                    Guaranteed 100% Placement after Training
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                <span
+                  className="text-gray-700 text-lg"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  10+ Years of Excellence
+                </span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Users className="h-5 w-5 text-[#1F497D]" />
                 </div>
+                <span
+                  className="text-gray-700 text-lg"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  50,000+ Successful Placements
+                </span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Building2 className="h-5 w-5 text-[#1F497D]" />
+                </div>
+                <span
+                  className="text-gray-700 text-lg"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  500+ Partner Companies
+                </span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <CheckCircle2 className="h-5 w-5 text-green-600" />
+                </div>
+                <span
+                  className="text-gray-700 text-lg font-semibold"
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
+                  Guaranteed 100% Placement after Training
+                </span>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
         // <section id="about" className="py-20 bg-white">
         //     <div className="max-w-7xl mx-auto px-6">
         //         <div className="text-center mb-16">
