@@ -7,6 +7,7 @@ import Homepage from './pages/Homepage';
 import Footer from './layout/Footer';
 import Contactpage from './pages/Contactpage';
 import Aboutpage from './pages/Aboutpage';
+import Jobfairpage from './pages/Jobfairpage';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/contact' element={<Contactpage />} />
           <Route path='/Training' element={<Training />} />
           <Route path='/about' element={<Aboutpage/>}/>
+          <Route path='/job-fairs' element={<Jobfairpage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
