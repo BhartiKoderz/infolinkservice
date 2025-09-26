@@ -45,7 +45,7 @@ const trainingPrograms = [
 
 export default function Training() {
   return (
-    <div className="min-h-screen bg-gray-100 pt-24 px-6">
+    <div className="min-h-screen bg-gray-100 py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
           Training Programs

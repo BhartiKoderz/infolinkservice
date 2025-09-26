@@ -71,7 +71,7 @@ function Footer() {
                         <h3 className="text-lg font-semibold mb-6">Services</h3>
                         <ul className="space-y-4">
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-white transition-colors">Campus Drives</a>
+                                <Link to="/campus-drive" className="text-gray-400 hover:text-white transition-colors">Campus Drives</Link>
                             </li>
                             <li>
                                 <a href="#" className="text-gray-400 hover:text-white transition-colors">Training Programs</a>

@@ -24,7 +24,7 @@ const Navbar = () => {
         { name: "About", href: "/about" },
         { name: "Job Fairs", href: "/job-fairs" },
         { name: "Training", href: "/training" },
-        { name: "Campus Drives", href: "/campus-drives" },
+        { name: "Campus Drives", href: "/campus-drive" },
         // { name: "News", href: "/news" },
         { name: "Contact", href: "/contact" },
     ];
