@@ -1,7 +1,7 @@
 
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import logo from '../assests/logo.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , Link} from 'react-router-dom';
 
 function Footer() {
     const navigate = useNavigate();
@@ -91,9 +91,9 @@ function Footer() {
                         © {currentYear} All rights reserved.
                     </p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-                        <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-                        <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                        <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+                        <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
+                        <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</Link>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from '../assests/logo.png'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
         { name: "Job Fairs", href: "/job-fairs" },
         { name: "Training", href: "/training" },
         { name: "Campus Drives", href: "/campus-drives" },
-        { name: "News", href: "/news" },
+        // { name: "News", href: "/news" },
         { name: "Contact", href: "/contact" },
     ];
 
@@ -49,23 +50,23 @@ const Navbar = () => {
                 {/* Links */}
                 <div className="flex items-center space-x-6">
                     {navLinks.map((link) => (
-                        <a
+                        <Link
                             key={link.name}
-                            href={link.href}
+                            to={link.href}
                             className={`transition-colors duration-300 text-gray-800 hover:text-blue-600 `}
                         >
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
-                    <a
-                        href="/join-job-fair"
+                    <Link
+                        to="/join-job-fair"
                         className={`px-4 py-2 rounded-lg font-semibold transition duration-300 ${isScrolled
                             ? "bg-[#1F497D] text-white hover:bg-blue-800"
                             : "bg-yellow-400 text-blue-900 hover:bg-yellow-500"
                             }`}
                     >
                         Join Job Fair
-                    </a>
+                    </Link>
                 </div>
             </div>
 
@@ -89,22 +90,22 @@ const Navbar = () => {
             {menuOpen && (
                 <div className="lg:hidden bg-[#1F497D] px-4 pb-4 space-y-2">
                     {navLinks.map((link) => (
-                        <a
+                        <Link
                             key={link.name}
-                            href={link.href}
+                            to={link.href}
                             className="block py-2 border-b border-blue-500 text-white hover:text-yellow-300"
                             onClick={() => setMenuOpen(false)}
                         >
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
-                    <a
-                        href="/join-job-fair"
+                    <Link
+                        to="/join-job-fair"
                         className="block text-center mt-3 bg-yellow-400 text-blue-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition duration-300"
                         onClick={() => setMenuOpen(false)}
                     >
                         Join Job Fair
-                    </a>
+                    </Link>
                 </div>
             )}
         </nav>

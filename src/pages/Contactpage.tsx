@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { Mail, Phone, MapPin } from 'lucide-react'
 
 function Contactpage() {
     return (
-        <section id="contact" className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-6">
+        <section id="contact" className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <div className="w-full py-16 lg:py-24 mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -13,7 +13,7 @@ function Contactpage() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-12">
+                <div className="grid md:grid-cols-2 gap-8">
                     {/* Contact Info */}
                     <div>
                         <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
@@ -49,7 +49,7 @@ function Contactpage() {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="bg-gray-50 p-8 rounded-2xl">
+                    <div className="bg-gray-50 p-8 rounded-2xl shadow-lg">
                         <form className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
