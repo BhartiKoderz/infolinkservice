@@ -1,7 +1,8 @@
 
-import React, { useState, useEffect } from 'react';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Training from './sections/AboutUS/Training';
+import CampusDrives from './sections/AboutUS/CampusDrives';
 import Navbar from './layout/Navbar';
 import Homepage from './pages/Homepage';
 import Footer from './layout/Footer';
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Training' element={<Training />} />
           <Route path='/about' element={<Aboutpage/>}/>
           <Route path='/job-fairs' element={<Jobfairpage/>}/>
+          <Route path='/campus-drives' element={<CampusDrives/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
