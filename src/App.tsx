@@ -10,6 +10,7 @@ import Aboutpage from './pages/Aboutpage';
 import Jobfairpage from './pages/Jobfairpage';
 import CampusDrives from './pages/Campusdrive';
 import Testimonials from './pages/Testimonial';
+import ScrollToTop from './pages/ScrollToTop';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop/>
         <Navbar />
         <Routes>
           <Route path='/' element={<Homepage />} />
