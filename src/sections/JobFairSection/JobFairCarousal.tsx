@@ -1,3 +1,4 @@
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -50,7 +51,11 @@ const JobFairCarousel = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#1F497D] text-center mb-12">
+        {/* Section Heading */}
+        <h2
+          className="text-4xl md:text-5xl font-bold text-[#1F497D] text-center mb-12"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
           Our Job Fairs
         </h2>
 
@@ -65,14 +70,23 @@ const JobFairCarousel = () => {
                 
                 {/* Content (40%) */}
                 <div className="w-full md:w-2/5 text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-[#1F497D] mb-4">
+                  <h3
+                    className="text-2xl font-bold text-[#1F497D] mb-4"
+                    style={{ fontFamily: "Poppins, sans-serif" }}
+                  >
                     {fair.title}
                   </h3>
-                  <p className="text-gray-600 mb-2 flex justify-center md:justify-start items-center gap-2">
+                  <p
+                    className="text-gray-600 mb-2 flex justify-center md:justify-start items-center gap-2"
+                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                  >
                     <MapPin className="w-4 h-4 text-yellow-300" /> {fair.location} |{" "}
                     <Calendar className="w-4 h-4 text-yellow-300" /> {fair.year}
                   </p>
-                  <p className="text-gray-500">
+                  <p
+                    className="text-gray-500"
+                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                  >
                     Bringing students and companies together for career success.
                   </p>
                 </div>
