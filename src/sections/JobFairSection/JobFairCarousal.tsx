@@ -1,102 +1,63 @@
-
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Calendar, MapPin } from "lucide-react";
 
-import agnihotri from "../../assests/job-fair-images/agnihotri-img.png";
-import wainganga from "../../assests/job-fair-images/wainganga-img.png";
-import kits from "../../assests/job-fair-images/kits-img.png";
-import kdk from "../../assests/job-fair-images/kdk-img.png";
+export interface JobFair {
+  title: string;
+  image: string;
+}
 
-const jobFairs = [
-  {
-    title: "Campus Drive at Agnihotri College of Engineering",
-    location: "Wardha",
-    year: "2017",
-    image: agnihotri,
-  },
-  {
-    title: "Campus Drive at Wainganga College of Engineering",
-    location: "Nagpur",
-    year: "2018",
-    image: wainganga,
-  },
-  {
-    title: "Campus Drive at KDK College of Engineering",
-    location: "Nagpur",
-    year: "2021",
-    image: kdk,
-  },
-  {
-    title: "Job Fair conducted at KITS College of Engineering",
-    location: "Ramtek",
-    year: "2021",
-    image: kits,
-  },
-];
+// Props type
+interface JobFairCarouselProps {
+  title: string;
+  jobFairs: JobFair[];
+}
 
-const JobFairCarousel = () => {
+const JobFairCarousel: React.FC<JobFairCarouselProps> = ({ title, jobFairs }) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 1,
+    slidesToShow: 3, // default for large screens
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 8000,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 768, // mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-6 bg-gray-50 mt-8">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
         <h2
-          className="text-4xl md:text-5xl font-bold text-[#1F497D] text-center mb-12"
+          className="text-4xl md:text-5xl font-bold text-[#1F497D] text-start mb-12 px-3"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
-          Our Job Fairs
+          {title}
         </h2>
 
         <Slider {...settings}>
           {jobFairs.map((fair, index) => (
-            <div
-              key={index}
-              className="!flex !flex-col md:!flex-row !items-center gap-8 !w-full px-3 "
-            >
-              {/* Full Slide Background */}
-              <div className="flex flex-col md:flex-row w-full bg-blue-100 p-6 rounded-2xl shadow-md items-center gap-8">
-                
-                {/* Content (40%) */}
-                <div className="w-full md:w-2/5 text-center md:text-left">
-                  <h3
-                    className="text-2xl font-bold text-[#1F497D] mb-4"
-                    style={{ fontFamily: "Poppins, sans-serif" }}
-                  >
-                    {fair.title}
-                  </h3>
-                  <p
-                    className="text-gray-600 mb-2 flex justify-center md:justify-start items-center gap-2"
-                    style={{ fontFamily: "Montserrat, sans-serif" }}
-                  >
-                    <MapPin className="w-4 h-4 text-yellow-300" /> {fair.location} |{" "}
-                    <Calendar className="w-4 h-4 text-yellow-300" /> {fair.year}
-                  </p>
-                  <p
-                    className="text-gray-500"
-                    style={{ fontFamily: "Montserrat, sans-serif" }}
-                  >
-                    Bringing students and companies together for career success.
-                  </p>
-                </div>
-
-                {/* Image (60%) */}
-                <div className="w-full md:w-3/5 flex justify-center">
+            <div key={index} className="px-3">
+              <div className="flex flex-col md:flex-row w-full bg-blue-100 rounded-2xl shadow-md items-center justify-center gap-6 p-4">
+                {/* Image */}
+                <div className="w-full flex justify-center">
                   <img
                     src={fair.image}
                     alt={fair.title}
-                    className="rounded-xl shadow-lg w-full max-w-lg object-cover"
+                    className="rounded-xl shadow-lg w-full max-w-md object-cover"
                   />
                 </div>
               </div>
