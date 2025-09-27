@@ -58,10 +58,10 @@ const JobFairCarousel = () => {
           {jobFairs.map((fair, index) => (
             <div
               key={index}
-              className="!flex !flex-col md:!flex-row !items-center gap-8 !w-full px-3 sm:px-0"
+              className="!flex !flex-col md:!flex-row !items-center gap-8 !w-full px-3 "
             >
               {/* Full Slide Background */}
-              <div className="flex flex-col md:flex-row w-full bg-blue-100 p-6 rounded-2xl shadow-lg items-center gap-8">
+              <div className="flex flex-col md:flex-row w-full bg-blue-100 p-6 rounded-2xl shadow-md items-center gap-8">
                 
                 {/* Content (40%) */}
                 <div className="w-full md:w-2/5 text-center md:text-left">
