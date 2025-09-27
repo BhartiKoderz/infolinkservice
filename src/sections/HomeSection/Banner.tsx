@@ -1,6 +1,6 @@
 
 
-import React from "react";
+
 
 const Banner = () => {
   return (
@@ -14,10 +14,17 @@ const Banner = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left z-10">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-            Building Careers & Connecting <span className="text-yellow-300">Talent</span>
+          <h1
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            Building Careers & Connecting{" "}
+            <span className="text-yellow-300">Talent</span>
           </h1>
-          <p className="text-lg sm:text-xl mb-8 text-blue-100">
+          <p
+            className="text-lg sm:text-xl mb-8 text-blue-100"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
             INFOLINK helps job seekers find opportunities and connects companies
             with the right talent through training programs and mega job fairs.
           </p>
@@ -44,7 +51,6 @@ const Banner = () => {
             alt="Job Fair Banner"
             className="rounded-2xl shadow-2xl max-w-full"
           />
-        
         </div>
       </div>
     </section>

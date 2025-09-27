@@ -1,3 +1,5 @@
+
+
 const JobFairBanner = () => {
   return (
     <section className="relative bg-[#1F497D] text-white pt-28 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
@@ -10,11 +12,17 @@ const JobFairBanner = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left z-10">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+          <h1
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
             Empowering Careers Through{" "}
             <span className="text-yellow-300">Job Fairs</span>
           </h1>
-          <p className="text-lg sm:text-xl mb-8 text-blue-100">
+          <p
+            className="text-lg sm:text-xl mb-8 text-blue-100"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
             Our Job Fairs connect students and job seekers with leading industry
             partners. Building bridges between education and employment,
             creating real opportunities for growth and success.

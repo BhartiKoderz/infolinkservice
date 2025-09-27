@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Users, Briefcase, Target, BookOpen } from "lucide-react";
 
 function BenefitsSection() {
@@ -28,13 +28,21 @@ function BenefitsSection() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-[#1F497D] mb-4">
+        {/* Section Heading */}
+        <h2
+          className="text-4xl font-bold text-[#1F497D] mb-4"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
           Why Attend Our Job Fairs?
         </h2>
-        <p className="text-gray-600 mb-12">
+        <p
+          className="text-gray-600 mb-12"
+          style={{ fontFamily: "Montserrat, sans-serif" }}
+        >
           Maximize your career potential with these benefits
         </p>
 
+        {/* Benefits Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
             <div
@@ -42,8 +50,18 @@ function BenefitsSection() {
               className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="mb-4">{benefit.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-              <p className="text-gray-600">{benefit.description}</p>
+              <h3
+                className="text-xl font-semibold mb-2"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                {benefit.title}
+              </h3>
+              <p
+                className="text-gray-600"
+                style={{ fontFamily: "Montserrat, sans-serif" }}
+              >
+                {benefit.description}
+              </p>
             </div>
           ))}
         </div>
@@ -53,3 +71,4 @@ function BenefitsSection() {
 }
 
 export default BenefitsSection;
+

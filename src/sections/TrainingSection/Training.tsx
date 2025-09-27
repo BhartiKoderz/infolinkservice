@@ -47,11 +47,19 @@ export default function Training() {
   return (
     <div className="min-h-screen bg-gray-100 py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
+        {/* Heading */}
+        <h1
+          className="text-4xl font-bold text-center text-blue-600 mb-8"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
           Training Programs
         </h1>
 
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+        {/* Description */}
+        <p
+          className="text-gray-600 text-center max-w-2xl mx-auto mb-12"
+          style={{ fontFamily: "Montserrat, sans-serif" }}
+        >
           Explore our professional training programs designed to enhance your skills and knowledge.
           We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
         </p>
@@ -61,11 +69,21 @@ export default function Training() {
           {trainingPrograms.map((program, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg rounded-xl p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1"
+              className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1"
             >
               <BookOpen className={`mx-auto w-12 h-12 mb-4 ${program.color}`} />
-              <h2 className="text-xl font-semibold text-gray-700 mb-2">{program.title}</h2>
-              <p className="text-gray-600 text-sm">{program.description}</p>
+              <h2
+                className="text-xl font-semibold text-gray-700 mb-2"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                {program.title}
+              </h2>
+              <p
+                className="text-gray-600 text-sm"
+                style={{ fontFamily: "Montserrat, sans-serif" }}
+              >
+                {program.description}
+              </p>
             </div>
           ))}
         </div>
