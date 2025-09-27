@@ -1,56 +1,40 @@
-
+import { Link } from "react-router-dom";
 
 
 
 const Banner = () => {
   return (
-    <section className="relative bg-[#1F497D] text-white pt-28 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
+    <section className="min-h-1/2 relative bg-gradient-to-b from-[#1F497D] to-white text-white pt-28 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
       {/* Background decorative shapes */}
-      <div className="absolute inset-0">
-        <div className="absolute -top-24 -right-24 w-72 h-72 bg-blue-500 opacity-30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-400 opacity-20 rounded-full blur-3xl"></div>
-      </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col text-center items-center justify-center">
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left z-10">
-          <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4"
-            style={{ fontFamily: "Poppins, sans-serif" }}
+        <h1
+          className="text-5xl sm:text-5xl lg:text-6xl font-extrabold leading-light mb-4"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
+          Building Careers & Connecting Talent
+        </h1>
+        {/* <p
+          className="text-lg sm:text-xl mb-8 text-blue-50"
+          style={{ fontFamily: "Montserrat, sans-serif" }}
+        >
+          INFOLINK helps job seekers find opportunities and connects companies
+          with the right talent through training programs and mega job fairs.
+        </p> */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <Link
+            to="/job-fairs"
+            className="uppercase order border-4 border-[#1F497D] text-[#1F497D] px-6 py-2 rounded-xl font-bold shadow hover:bg-blue-900 hover:text-white  transition"
           >
-            Building Careers & Connecting{" "}
-            <span className="text-yellow-300">Talent</span>
-          </h1>
-          <p
-            className="text-lg sm:text-xl mb-8 text-blue-100"
-            style={{ fontFamily: "Montserrat, sans-serif" }}
+            Join Job Fair
+          </Link>
+          <Link
+            to="/training"
+            className="uppercase border border-4 border-[#1F497D] text-[#1F497D] px-6 py-2 rounded-xl font-bold shadow hover:bg-blue-900 hover:text-white  transition"
           >
-            INFOLINK helps job seekers find opportunities and connects companies
-            with the right talent through training programs and mega job fairs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a
-              href="/join-job-fair"
-              className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold shadow hover:bg-yellow-500 transition"
-            >
-              Join Job Fair
-            </a>
-            <a
-              href="/training"
-              className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-50 transition"
-            >
-              Explore Training
-            </a>
-          </div>
-        </div>
-
-        {/* Image / Illustration */}
-        <div className="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center z-10">
-          <img
-            src="https://images.unsplash.com/photo-1581091012184-5c2f3e3f1c3d?auto=format&fit=crop&w=1000&q=80"
-            alt="Job Fair Banner"
-            className="rounded-2xl shadow-2xl max-w-full"
-          />
+            Explore Training
+          </Link>
         </div>
       </div>
     </section>

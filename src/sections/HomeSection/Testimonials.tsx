@@ -27,7 +27,7 @@ function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-[#f0f0f3]">
+    <section id="testimonials" className="py-10 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-16">
@@ -35,10 +35,10 @@ function Testimonials() {
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
-            Success Stories
+            Sucess<span className="text-[#1F497D]">Stories</span>
           </h2>
           <p
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
             Hear from our successful candidates and partner companies about their experience with PlacePro.
