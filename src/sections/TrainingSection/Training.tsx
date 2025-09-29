@@ -23,17 +23,8 @@ const trainingPrograms = [
 
 export default function Training() {
   return (
-    <div className="min-h-screen bg-gray-100 py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* Banner */}
-        <div className="w-full mb-12">
-          <img
-            src={trainingbanner}
-            alt="Training Programs Banner"
-            className="w-full h-64 md:h-40 lg:h-80 object-cover rounded-2xl shadow-lg"
-          />
-        </div>
-
+    <div className="min-h-screen pb-20 px-6">
+      <div className="max-w-5xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2
@@ -52,66 +43,61 @@ export default function Training() {
             We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
           </p>
         </div>
+        {/* Banner */}
+        <div className="w-full mb-12">
+          <img
+            src={trainingbanner}
+            alt="Training Programs Banner"
+            className="w-full h-64 md:h-40 lg:h-80 object-cover rounded-2xl shadow-lg"
+          />
+        </div>
 
         {/* Video + Images Section */}
-        <div className="mt-12 mb-16 flex gap-6 items-start">
-  {/* Left side video */}
-  <div className="flex-shrink-0">
-    <video
-      controls
-      autoPlay={true}
-      muted={false}
-      loop={false}
-      className="w-[200px] h-[300px] object-cover rounded-2xl shadow-xl border border-gray-300"
-    >
-      <source src={trainingv} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
+        {/* <div className=" mb-16 flex gap-6 items-start"> */}
+          {/* Left side video */}
+          {/* <div className="flex-shrink-0">
+            <video
+              controls
+              autoPlay={true}
+              muted={false}
+              loop={false}
+              className="w-[200px] h-[300px] object-cover rounded-2xl shadow-xl border border-gray-300"
+            >
+              <source src={trainingv} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div> */}
 
           {/* Right side images */}
-          <div className="flex gap-9 items-center">
-  {/* Horizontal (wider) */}
-  <div className="w-2/3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
+            {/* Horizontal (wider) */}
+            {/* <div className="w-2/3">
               <img
                 src={training1img}
                 alt="Training related 1"
                 className="w-full h-[180px] object-cover rounded-2xl shadow-lg"
               />
-            </div>
-          Explore our professional training programs designed to enhance your skills and knowledge.
-          We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
-        </p>
-</div>
-        {/* Video + Images Section (Professional Layout) */}
-        <div className="mt-12 mb-16 grid md:grid-cols-2  items-left">
+            </div> */}
+            {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Explore our professional training programs designed to enhance your skills and knowledge.
+              We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
+            </p> */}
+          
+          {/* Video + Images Section (Professional Layout) */}
+          {/* <div className="mt-12 mb-16 grid md:grid-cols-2  items-left"> */}
           {/* Left side video (vertical style) */}
-          <div className="w-full flex justify-center">
+          <div className="w-full">
             <video
               src={trainingpvideo}
               controls
               autoPlay
               muted
               loop
-              className="w-[200px] h-[350px] object-cover rounded-2xl shadow-xl border border-gray-300"
+              className="w-full h-80 object-cover rounded-2xl shadow-xl border border-gray-300"
             />
           </div>
-
-      </div>
-      <div className="min-h-screen px-6">
-        <div className="max-w-6xl mx-auto">
-          {/* Banner */}
-          <div className="w-full mb-12">
-            <img
-              src={trainingbanner}
-              alt="Training Programs Banner"
-              className="w-full h-64 md:h-40 lg:h-80 object-center  shadow-lg"
-              className="w-[200px] h-[350px] object-cover rounded-2xl shadow-xl border border-gray-300"
-            />
-          </div>
-
           {/* Right side images (side by side) */}
-          <div className="grid grid-cols-2 gap-9 justify-center">
+          <div className="grid grid-cols-2 gap-4 justify-center">
             <img
               src={training1img}
               alt="Training related 1"
