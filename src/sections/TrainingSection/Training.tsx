@@ -39,15 +39,15 @@ export default function Training() {
             Training <span className="text-[#1F497D]">Programs</span>
           </h2>
 
-        {/* Description */}
-         <p
+          {/* Description */}
+          <p
             className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
-          Explore our professional training programs designed to enhance your skills and knowledge.
-          We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
-        </p>
-</div>
+            Explore our professional training programs designed to enhance your skills and knowledge.
+            We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
+          </p>
+        </div>
         {/* Video + Images Section (Professional Layout) */}
         <div className="mt-12 mb-16 grid md:grid-cols-2  items-left">
           {/* Left side video (vertical style) */}
@@ -62,12 +62,12 @@ export default function Training() {
           {/* Right side images (side by side) */}
           <div className="grid grid-cols-2 gap-9 justify-center">
             <img
-              src={trainingimg}
+              src={training1img}
               alt="Training related 1"
               className="w-full h-[120px] object-cover rounded-2xl shadow-lg"
             />
             <img
-              src={trainingimg1}
+              src={trainin2img}
               alt="Training related 2"
               className="w-full h-[240px] object-cover rounded-2xl shadow-lg"
             />
