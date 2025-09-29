@@ -31,22 +31,23 @@ export default function Training() {
         </div>
 
         {/* Heading */}
-        <h1
-          className="text-4xl font-bold text-center text-blue-600 mb-8"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          Training Programs
-        </h1>
+        <div className="text-center mb-16">
+        <h2
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            Training <span className="text-[#1F497D]">Programs</span>
+          </h2>
 
         {/* Description */}
-        <p
-          className="text-gray-600 text-center max-w-2xl mx-auto mb-12"
-          style={{ fontFamily: "Montserrat, sans-serif" }}
-        >
+         <p
+            className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
           Explore our professional training programs designed to enhance your skills and knowledge.
           We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
         </p>
-
+</div>
         {/* Video + Images Section (Professional Layout) */}
         <div className="mt-12 mb-16 grid md:grid-cols-2  items-left">
           {/* Left side video (vertical style) */}
