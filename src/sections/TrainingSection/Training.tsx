@@ -88,7 +88,7 @@ export default function Training() {
           {/* Left side video (vertical style) */}
           <div className="w-full">
             <video
-              src={trainingpvideo}
+              src={trainingv}
               controls
               autoPlay
               muted
