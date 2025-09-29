@@ -84,7 +84,7 @@ export default function Training() {
           {/* Left side video (vertical style) */}
           <div className="w-full flex justify-center">
             <video
-              src={trainingpvideo}
+              src={trainingv}
               controls
               className="w-[200px] h-[350px] object-cover rounded-2xl shadow-xl border border-gray-300"
             />
@@ -93,12 +93,12 @@ export default function Training() {
           {/* Right side images (side by side) */}
           <div className="grid grid-cols-2 gap-9 justify-center">
             <img
-              src={trainingimg}
+              src={training1img}
               alt="Training related 1"
               className="w-full h-[120px] object-cover rounded-2xl shadow-lg"
             />
             <img
-              src={trainingimg1}
+              src={training2img1}
               alt="Training related 2"
               className="w-full h-[240px] object-cover rounded-2xl shadow-lg"
             />
