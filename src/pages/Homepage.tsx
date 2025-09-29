@@ -4,6 +4,7 @@ import About from '../sections/HomeSection/About'
 import Services from '../sections/HomeSection/Services'
 import Partners from '../sections/HomeSection/Partners'
 import Testimonials from '../sections/HomeSection/Testimonials'
+import Campusdrive from '../sections/HomeSection/Campusdrive'
 
 function Homepage() {
   return (
@@ -12,6 +13,7 @@ function Homepage() {
       <About />
       <Services />
       <Partners/>
+      <Campusdrive/>
       <Testimonials/>
     </div>
   )

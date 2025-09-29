@@ -35,7 +35,7 @@ function Testimonials() {
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
-            Sucess<span className="text-[#1F497D]">Stories</span>
+            Sucess<span className="text-[#1F497D]"> Stories</span>
           </h2>
           <p
             className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"

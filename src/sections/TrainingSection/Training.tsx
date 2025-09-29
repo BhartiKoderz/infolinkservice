@@ -26,7 +26,7 @@ export default function Training() {
           <img
             src={trainingbanner}
             alt="Training Programs Banner"
-            className="w-full h-64 md:h-40 lg:h-80 object-cover rounded-2xl shadow-lg"
+            className="w-full h-64 md:h-40 lg:h-80 object-center  shadow-lg"
           />
         </div>
 

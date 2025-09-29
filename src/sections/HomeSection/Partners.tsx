@@ -1,35 +1,28 @@
-import { Building2 } from "lucide-react";
 import Slider from "react-slick";
-import img1 from '../../assests/partners/BajajSteel.jpg';
-import img2 from '../../assests/partners/RnRDataLex.jpg';
-import img3 from '../../assests/partners/alacrity.png';
-import img4 from '../../assests/partners/ciphertech.png';
-import img5 from '../../assests/partners/disha.png';
-import img6 from '../../assests/partners/gentech.png';
-import img7 from '../../assests/partners/greenindia.png';
-import img8 from '../../assests/partners/induslnd.jpg';
-import img9 from '../../assests/partners/kapilanch.png';
-import img10 from '../../assests/partners/karamtara.gif';
-import img11 from '../../assests/partners/kotak.jpg';
-import img12 from '../../assests/partners/legalforce.jpg';
 
 
 
 
 function Partners() {
+  // Import all images inside trustedpartners folder
+  const logos = Object.values(
+    import.meta.glob("../../assests/trustedpartners/*.{png,jpg,jpeg,svg}", {
+      eager: true,
+      import: "default",
+    })
+  );
+
+  // Split into 3 rows
+  const logos1 = logos.slice(0, Math.ceil(logos.length / 3));
+  const logos2 = logos.slice(Math.ceil(logos.length / 3), Math.ceil((2 * logos.length) / 3));
+  const logos3 = logos.slice(Math.ceil((2 * logos.length) / 3));
 
 
-  const logos = [
-    img7, img8, img9, img10, img11, img12
-  ]
 
-  const logos1 = [
-    img1, img2, img3, img4, img5, img6,
-  ]
 
   const settingsLTR = {
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
@@ -66,43 +59,33 @@ function Partners() {
 
         <div className="space-y-8">
           {/* Row 1 - Left to Right */}
-          <Slider {...settingsLTR}>
-            {logos1.map((logo, i) => (
-              <div key={i} className="px-4">
-                <img
-                  src={logo}
-                  alt={`Partner ${i}`}
-                  className="mx-auto h-20 object-contain"
-                />
-              </div>
-            ))}
-          </Slider>
+        
+            <Slider {...settingsLTR}>
+              {logos1.map((logo, i) => (
+                <div key={i} className="px-4">
+                  <img src={logo as string} alt={`Partner ${i}`} className="mx-auto h-20 object-contain" />
+                </div>
+              ))}
+            </Slider>
 
-          {/* Row 2 - Right to Left */}
+           {/* Row 2 - Right to Left */}
           <Slider {...settingsRTL}>
-            {logos.map((logo, i) => (
+            {logos2.map((logo, i) => (
               <div key={i} className="px-4">
-                <img
-                  src={logo}
-                  alt={`Partner ${i}`}
-                  className="mx-auto h-20 object-contain"
-                />
+                <img src={logo as string} alt={`Partner ${i}`} className="mx-auto h-20 object-contain" />
               </div>
             ))}
           </Slider>
 
           {/* Row 3 - Left to Right */}
           <Slider {...settingsLTR}>
-            {logos.map((logo, i) => (
+            {logos3.map((logo, i) => (
               <div key={i} className="px-4">
-                <img
-                  src={logo}
-                  alt={`Partner ${i}`}
-                  className="mx-auto h-20 object-contain"
-                />
+                <img src={logo as string} alt={`Partner ${i}`} className="mx-auto h-20 object-contain" />
               </div>
             ))}
           </Slider>
+
         </div>
         {/* Stats */}
         <div className="mt-16 text-center">
