@@ -23,7 +23,6 @@ function Contactpage() {
                             how we can help you achieve your goals.
                         </p>
                     </div>
-
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Contact Info */}
                         <div>
@@ -116,9 +115,9 @@ function Contactpage() {
                         </div>
                     </div>
                 </div>
-                <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.115827544431!2d79.07631157379977!3d21.107947885056856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf71bf8a7803%3A0x7cb660196d5ac23d!2sINFOLINK%20SERVICES!5e0!3m2!1sen!2sin!4v1759121451546!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.115827544431!2d79.07631157379977!3d21.107947885056856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf71bf8a7803%3A0x7cb660196d5ac23d!2sINFOLINK%20SERVICES!5e0!3m2!1sen!2sin!4v1759121451546!5m2!1sen!2sin"
+                    className="w-full h-[500px] rounded-2xl shadow-lg border-0"
+                    style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </>
     )
