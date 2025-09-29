@@ -1,6 +1,8 @@
 
 import { Users, Briefcase, Target, BookOpen } from "lucide-react";
 
+
+
 function BenefitsSection() {
   const benefits = [
     {
