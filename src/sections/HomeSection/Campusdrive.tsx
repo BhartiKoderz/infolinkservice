@@ -1,31 +1,15 @@
-import React from "react";
-import { GraduationCap, Briefcase } from "lucide-react";
+
 import { Link } from "react-router-dom";
 import img1 from '../../assests/job-fair-images/agnihotri-img.png';
 import img2 from '../../assests/job-fair-images/kits-img.png';
 import img3 from '../../assests/job-fair-images/wainganga-img.png';
 
 const CampusDrive = () => {
-    const drives = [
-        {
-            icon: <GraduationCap className="h-10 w-10 text-[#1F497D]" />,
-            title: "Mega Campus Drive 2025",
-            desc: "Join our upcoming mega campus drive connecting top graduates with 50+ leading companies across IT, Finance, and Manufacturing sectors.",
-            date: "12th October 2025",
-            location: "Nagpur University Campus",
-        },
-        {
-            icon: <Briefcase className="h-10 w-10 text-[#1F497D]" />,
-            title: "IT Placement Drive",
-            desc: "Specialized campus drive focused on the IT sector with job opportunities for software engineers, testers, and analysts.",
-            date: "25th October 2025",
-            location: "Pune Tech Park",
-        },
-    ];
+   
 
     const driveImages = [img1, img2, img3];
     return (
-        <section className="py-20 bg-gray-50" id="campus-drive">
+        <section className="py-20 bg-gray-50" >
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Heading */}
                 <div className="text-center mb-16">
