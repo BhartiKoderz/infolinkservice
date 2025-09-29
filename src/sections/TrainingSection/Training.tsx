@@ -2,6 +2,10 @@ import { BookOpen } from "lucide-react";
 import trainingbanner from "../../assests/job-fair-images/trainingbanner.jpg";
 
 // Import video & images
+import trainingpvideo from "../../assests/job-fair-images/trainingvideo.mp4";
+import trainingimg from "../../assests/job-fair-images/trainingimg.png";
+import trainingimg1 from "../../assests/job-fair-images/trainingimg1.png";
+
 
 import training1img from "../../assests/job-fair-images/training1img.png";
 import trainin2img from "../../assests/job-fair-images/trainin2img.png";
@@ -86,6 +90,22 @@ export default function Training() {
             <video
               src={trainingpvideo}
               controls
+              autoPlay
+              muted
+              loop
+              className="w-[200px] h-[350px] object-cover rounded-2xl shadow-xl border border-gray-300"
+            />
+          </div>
+
+      </div>
+      <div className="min-h-screen px-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Banner */}
+          <div className="w-full mb-12">
+            <img
+              src={trainingbanner}
+              alt="Training Programs Banner"
+              className="w-full h-64 md:h-40 lg:h-80 object-center  shadow-lg"
               className="w-[200px] h-[350px] object-cover rounded-2xl shadow-xl border border-gray-300"
             />
           </div>
