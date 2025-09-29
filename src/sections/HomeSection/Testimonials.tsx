@@ -27,7 +27,7 @@ function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-10 bg-gray-100">
+    <section className="py-10 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-16">
@@ -35,7 +35,7 @@ function Testimonials() {
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
-            Sucess<span className="text-[#1F497D]">Stories</span>
+            Sucess<span className="text-[#1F497D]"> Stories</span>
           </h2>
           <p
             className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"

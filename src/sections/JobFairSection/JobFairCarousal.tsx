@@ -20,15 +20,15 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
   jobFairs,
 }) => {
   return (
-    <section className="py-5 sm:py-10 bg-gray-50 mt-4 sm:mt-8">
+    <section className="py-5 sm:py-10 bg-gray-50  ">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Heading */}
-        <h2
-          className="px-3 text-3xl md:text-5xl font-bold text-[#1F497D] mb-5"
+        <p
+          className="px-3 text-xl md:text-2xl font-bold text-[#1F497D] mb-5"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           {title}
-        </h2>
+        </p>
 
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -65,7 +65,7 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
                 <img
                   src={fair.image}
                   alt={fair.title}
-                  className="rounded-xl shadow-lg w-full max-w-md object-cover"
+                  className="rounded-xl shadow-lg w-full max-w-md object-cover h-48 md:h-64"
                 />
               </div>
             </SwiperSlide>
