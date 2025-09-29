@@ -2,6 +2,10 @@ import { BookOpen } from "lucide-react";
 import trainingbanner from "../../assests/job-fair-images/trainingbanner.jpg";
 
 // Import video & images
+import trainingpvideo from "../../assests/job-fair-images/trainingvideo.mp4";
+import trainingimg from "../../assests/job-fair-images/trainingimg.png";
+import trainingimg1 from "../../assests/job-fair-images/trainingimg1.png";
+
 
 import training1img from "../../assests/job-fair-images/training1img.png";
 import trainin2img from "../../assests/job-fair-images/trainin2img.png";
@@ -19,17 +23,8 @@ const trainingPrograms = [
 
 export default function Training() {
   return (
-    <div className="min-h-screen bg-gray-100 py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* Banner */}
-        <div className="w-full mb-12">
-          <img
-            src={trainingbanner}
-            alt="Training Programs Banner"
-            className="w-full h-64 md:h-40 lg:h-80 object-cover rounded-2xl shadow-lg"
-          />
-        </div>
-
+    <div className="min-h-screen pb-20 px-6">
+      <div className="max-w-5xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2
@@ -39,8 +34,8 @@ export default function Training() {
             Training <span className="text-[#1F497D]">Programs</span>
           </h2>
 
-        {/* Description */}
-         <p
+          {/* Description */}
+          <p
             className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
@@ -48,57 +43,68 @@ export default function Training() {
             We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
           </p>
         </div>
+        {/* Banner */}
+        <div className="w-full mb-12">
+          <img
+            src={trainingbanner}
+            alt="Training Programs Banner"
+            className="w-full h-64 md:h-40 lg:h-80 object-cover rounded-2xl shadow-lg"
+          />
+        </div>
 
         {/* Video + Images Section */}
-        <div className="mt-12 mb-16 flex gap-6 items-start">
-  {/* Left side video */}
-  <div className="flex-shrink-0">
-    <video
-      controls
-      autoPlay={true}
-      muted={false}
-      loop={false}
-      className="w-[200px] h-[300px] object-cover rounded-2xl shadow-xl border border-gray-300"
-    >
-      <source src={trainingv} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
+        {/* <div className=" mb-16 flex gap-6 items-start"> */}
+          {/* Left side video */}
+          {/* <div className="flex-shrink-0">
+            <video
+              controls
+              autoPlay={true}
+              muted={false}
+              loop={false}
+              className="w-[200px] h-[300px] object-cover rounded-2xl shadow-xl border border-gray-300"
+            >
+              <source src={trainingv} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div> */}
 
           {/* Right side images */}
-          <div className="flex gap-9 items-center">
-  {/* Horizontal (wider) */}
-  <div className="w-2/3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
+            {/* Horizontal (wider) */}
+            {/* <div className="w-2/3">
               <img
                 src={training1img}
                 alt="Training related 1"
                 className="w-full h-[180px] object-cover rounded-2xl shadow-lg"
               />
-            </div>
-          Explore our professional training programs designed to enhance your skills and knowledge.
-          We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
-        </p>
-</div>
-        {/* Video + Images Section (Professional Layout) */}
-        <div className="mt-12 mb-16 grid md:grid-cols-2  items-left">
+            </div> */}
+            {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Explore our professional training programs designed to enhance your skills and knowledge.
+              We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
+            </p> */}
+          
+          {/* Video + Images Section (Professional Layout) */}
+          {/* <div className="mt-12 mb-16 grid md:grid-cols-2  items-left"> */}
           {/* Left side video (vertical style) */}
-          <div className="w-full flex justify-center">
+          <div className="w-full">
             <video
               src={trainingv}
               controls
-              className="w-[200px] h-[350px] object-cover rounded-2xl shadow-xl border border-gray-300"
+              autoPlay
+              muted
+              loop
+              className="w-full h-80 object-cover rounded-2xl shadow-xl border border-gray-300"
             />
           </div>
-
           {/* Right side images (side by side) */}
-          <div className="grid grid-cols-2 gap-9 justify-center">
+          <div className="grid grid-cols-2 gap-4 justify-center">
             <img
               src={training1img}
               alt="Training related 1"
               className="w-full h-[120px] object-cover rounded-2xl shadow-lg"
             />
             <img
-              src={training2img1}
+              src={trainin2img}
               alt="Training related 2"
               className="w-full h-[240px] object-cover rounded-2xl shadow-lg"
             />

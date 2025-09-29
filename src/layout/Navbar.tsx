@@ -50,7 +50,7 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Link
+          {/* <Link
             to="/job-fairs"
             className={`px-4 py-2 rounded-lg font-semibold transition duration-300 ${isScrolled
                 ? "bg-[#1F497D] text-white hover:bg-blue-800"
@@ -58,7 +58,7 @@ const Navbar = () => {
               }`}
           >
             Join Job Fair
-          </Link>
+          </Link> */}
         </div>
       </div>
 
