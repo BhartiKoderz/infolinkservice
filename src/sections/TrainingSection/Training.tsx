@@ -2,10 +2,14 @@ import { BookOpen } from "lucide-react";
 import trainingbanner from "../../assests/job-fair-images/trainingbanner.jpg";
 
 // Import video & images
-import trainingpvideo from "../../assests/job-fair-images/trainingpvideo.mp4";
+import trainingpvideo from "../../assests/job-fair-images/trainingvideo.mp4";
+import trainingimg from "../../assests/job-fair-images/trainingimg.png";
+import trainingimg1 from "../../assests/job-fair-images/trainingimg1.png";
+
+
 import training1img from "../../assests/job-fair-images/training1img.png";
 import trainin2img from "../../assests/job-fair-images/trainin2img.png";
-
+import trainingv from "../../assests/job-fair-images/trainingv.mp4";
 const trainingPrograms = [
   { title: "HR Training", description: "Learn recruitment, HR policies, performance management, and employee engagement.", color: "text-blue-600" },
   { title: "Aptitude Test", description: "Enhance reasoning, quantitative, and verbal skills to excel in competitive exams.", color: "text-green-600" },
@@ -48,6 +52,37 @@ export default function Training() {
             We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
           </p>
         </div>
+
+        {/* Video + Images Section */}
+        <div className="mt-12 mb-16 flex gap-6 items-start">
+  {/* Left side video */}
+  <div className="flex-shrink-0">
+    <video
+      controls
+      autoPlay={true}
+      muted={false}
+      loop={false}
+      className="w-[200px] h-[300px] object-cover rounded-2xl shadow-xl border border-gray-300"
+    >
+      <source src={trainingv} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+          {/* Right side images */}
+          <div className="flex gap-9 items-center">
+  {/* Horizontal (wider) */}
+  <div className="w-2/3">
+              <img
+                src={training1img}
+                alt="Training related 1"
+                className="w-full h-[180px] object-cover rounded-2xl shadow-lg"
+              />
+            </div>
+          Explore our professional training programs designed to enhance your skills and knowledge.
+          We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
+        </p>
+</div>
         {/* Video + Images Section (Professional Layout) */}
         <div className="mt-12 mb-16 grid md:grid-cols-2  items-left">
           {/* Left side video (vertical style) */}
@@ -55,6 +90,22 @@ export default function Training() {
             <video
               src={trainingpvideo}
               controls
+              autoPlay
+              muted
+              loop
+              className="w-[200px] h-[350px] object-cover rounded-2xl shadow-xl border border-gray-300"
+            />
+          </div>
+
+      </div>
+      <div className="min-h-screen px-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Banner */}
+          <div className="w-full mb-12">
+            <img
+              src={trainingbanner}
+              alt="Training Programs Banner"
+              className="w-full h-64 md:h-40 lg:h-80 object-center  shadow-lg"
               className="w-[200px] h-[350px] object-cover rounded-2xl shadow-xl border border-gray-300"
             />
           </div>
