@@ -2,10 +2,10 @@ import { BookOpen } from "lucide-react";
 import trainingbanner from "../../assests/job-fair-images/trainingbanner.jpg";
 
 // Import video & images
-import trainingpvideo from "../../assests/job-fair-images/trainingpvideo.mp4";
+
 import training1img from "../../assests/job-fair-images/training1img.png";
 import trainin2img from "../../assests/job-fair-images/trainin2img.png";
-
+import trainingv from "../../assests/job-fair-images/trainingv.mp4";
 const trainingPrograms = [
   { title: "HR Training", description: "Learn recruitment, HR policies, performance management, and employee engagement.", color: "text-blue-600" },
   { title: "Aptitude Test", description: "Enhance reasoning, quantitative, and verbal skills to excel in competitive exams.", color: "text-green-600" },
@@ -55,12 +55,12 @@ export default function Training() {
   <div className="flex-shrink-0">
     <video
       controls
-      autoPlay={false}
+      autoPlay={true}
       muted={false}
       loop={false}
       className="w-[200px] h-[300px] object-cover rounded-2xl shadow-xl border border-gray-300"
     >
-      <source src={trainingpvideo} type="video/mp4" />
+      <source src={trainingv} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </div>
