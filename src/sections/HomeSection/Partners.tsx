@@ -13,9 +13,6 @@ import img10 from '../../assests/partners/karamtara.gif';
 import img11 from '../../assests/partners/kotak.jpg';
 import img12 from '../../assests/partners/legalforce.jpg';
 
-
-
-
 function Partners() {
 
 
