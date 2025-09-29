@@ -1,8 +1,5 @@
 import Slider from "react-slick";
 
-
-
-
 function Partners() {
   // Import all images inside trustedpartners folder
   const logos = Object.values(
