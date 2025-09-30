@@ -29,7 +29,7 @@ function BenefitsSection() {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Section Heading */}
         <h2
           className="text-4xl font-bold text-[#1F497D] mb-4"

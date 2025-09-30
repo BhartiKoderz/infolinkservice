@@ -22,7 +22,7 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
 }) => {
   return (
     <section className="pb-5  ">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto px-4">
         {/* Section Heading */}
         <h2
           className="px-3 text-3xl md:text-2xl font-bold text-[#1F497D] mb-5"
