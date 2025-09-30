@@ -64,20 +64,20 @@ function Footer() {
                   About Us
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  to="/services"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Services
-                </Link>
-              </li> */}
               <li>
                 <Link
                   to="/partners"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Partners
+                </Link>
+              </li>
+               <li>
+                <Link
+                  to="/team"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Team
                 </Link>
               </li>
               <li>

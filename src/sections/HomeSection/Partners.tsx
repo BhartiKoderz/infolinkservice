@@ -65,53 +65,39 @@ import img58 from '../../assests/trustedpartners/set2_logo_44.png';
 import img59 from '../../assests/trustedpartners/set2_logo_45.png';
 import img60 from '../../assests/trustedpartners/set2_logo_46.png';
 import img61 from '../../assests/trustedpartners/set2_logo_47.png';
+import img62 from '../../assests/trustedpartners/set2_logo_48.png';
+import img63 from '../../assests/trustedpartners/set2_logo_49.png';
+import img64 from '../../assests/trustedpartners/set2_logo_50.png';
+import img65 from '../../assests/trustedpartners/set2_logo_51.png';
+import img66 from '../../assests/trustedpartners/set2_logo_52.png';
+import img67 from '../../assests/trustedpartners/set2_logo_53.png';
+import img68 from '../../assests/trustedpartners/set2_logo_54.png';
+import img69 from '../../assests/trustedpartners/set2_logo_55.png';
+import img70 from '../../assests/trustedpartners/set2_logo_56.png';
+import img71 from '../../assests/trustedpartners/set2_logo_57.png';
+import img72 from '../../assests/trustedpartners/set2_logo_58.png';
+import img73 from '../../assests/trustedpartners/set2_logo_59.png';
+import img74 from '../../assests/trustedpartners/set2_logo_60.png';
+import img75 from '../../assests/trustedpartners/set2_logo_61.png';
+import img76 from '../../assests/trustedpartners/set2_logo_62.png';
 
 function Partners() {
-  // Import all images inside trustedpartners folder
-  // const logos = Object.values(
-  //   import.meta.glob("../../assests/trustedpartners/*.{png,jpg,jpeg,svg}", {
-  //     eager: true,
-  //     import: "default",
-  //   })
-  // );
-
   const logos1 = [img1, img2, img3, img4, img5, img6, img7, img8,
     img9, img10, img11, img12, img13, img14, img15, img16, img17,
-    img18, img19, img20, img21,
+    img18, img19, img20, img21,img22, img23, img24, img25, img26, img27,
   ];
 
-  const logos2 = [img22, img23, img24, img25, img26, img27,
-    img28, img29, img30, img31, img32, img33, img34, img35, img36,
-    img37, img38, img39, img40
+  const logos2 = [img28, img29, img30, img31, img32, img33, img34, img35, img36,
+    img37, img38, img39, img40, img41, img42, img43, img44, img45, img46,
+    img47, img48, img49, img50
   ];
 
-  const logos3 = [img41, img42, img43, img44, img45, img46,
-    img47, img48, img49, img50, img51, img52, img53, img54, img55, img56, img57,
-    img58, img59, img60, img61];
-  // Split into 3 rows
-  // const logos1 = logos.slice(0, Math.ceil(logos.length / 3));
-  // const logos2 = logos.slice(Math.ceil(logos.length / 3), Math.ceil((2 * logos.length) / 3));
-  // const logos3 = logos.slice(Math.ceil((2 * logos.length) / 3));
+  const logos3 = [ img51, img52, img53, img54, img55, img56, img57,
+    img58, img59, img60, img61, img62, img63, img64, img65, img66, img67, img68,
+    img69, img70, img71, img72, img73, img74, img75, img76
+  ];
 
-
-
-  const settingsLTR = {
-    infinite: true,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 3000,
-    cssEase: "linear",
-    arrows: false,
-    pauseOnHover: false,
-  };
-
-  const settingsRTL = {
-    ...settingsLTR,
-    rtl: true, // reverses scroll direction
-  };
-
+ 
   return (
     <section className="py-10 ">
       <div className="max-w-5xl mx-auto px-6">
@@ -239,34 +225,6 @@ function Partners() {
               </SwiperSlide>
             ))}
           </Swiper>
-
-          {/* Row 1 - Left to Right */}
-          {/* <Slider {...settingsLTR}>
-            {logos1?.map((logo, i) => (
-              <div key={i} className="px-4">
-                <img src={logo as string} alt={`Partner ${i}`} 
-                className="mx-auto h-20 object-contain" />
-              </div>
-            ))}
-          </Slider> */}
-
-          {/* Row 2 - Right to Left */}
-          {/* <Slider {...settingsRTL}>
-                {logos2.map((logo, i) => (
-                  <div key={i} className="px-4">
-                    <img src={logo } alt={`Partner ${i}`} className="mx-auto h-20 object-contain" />
-                  </div>
-                ))}
-              </Slider> */}
-
-          {/* Row 3 - Left to Right */}
-          {/* <Slider {...settingsLTR}>
-                {logos3.map((logo, i) => (
-                  <div key={i} className="px-4">
-                    <img src={logo } alt={`Partner ${i}`} className="mx-auto h-20 object-contain" />
-                  </div>
-                ))}
-              </Slider> */}
         </div>
         {/* Stats */}
         <div className="mt-16 text-center">

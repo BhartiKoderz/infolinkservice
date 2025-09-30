@@ -10,6 +10,7 @@ import Jobfairpage from './pages/Jobfairpage';
 import Testimonials from './pages/Testimonial';
 import ScrollToTop from './pages/ScrollToTop';
 import Trainingpage from './pages/Trainingpage';
+import Teampage from './pages/Teampage';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/job-fairs' element={<Jobfairpage/>}/>
           {/* <Route path='/campus-drive' element={<CampusDrives/>}/> */}
           <Route path='/testimonial' element={<Testimonials/>}/>
+          <Route path='/team' element={<Teampage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
