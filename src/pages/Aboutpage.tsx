@@ -4,9 +4,10 @@ import MissionVision from '../sections/AboutSection/MissionVision'
 
 
 function Aboutpage() {
+  const title = "About Us";
   return (
     <div>
-        <AboutBanner/>
+        <AboutBanner title={title}/>
         <AboutContent/>
         <MissionVision/>
     </div>

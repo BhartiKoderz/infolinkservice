@@ -3,7 +3,7 @@ import { GraduationCap, BookOpen, Briefcase } from "lucide-react";
 const Services = () => {
   return (
       <section id="services" className="py-10 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2

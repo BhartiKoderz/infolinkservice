@@ -1,8 +1,8 @@
 
 import { Link } from "react-router-dom";
-import img1 from '../../assests/job-fair-images/agnihotri-img.png';
-import img2 from '../../assests/job-fair-images/kits-img.png';
-import img3 from '../../assests/job-fair-images/wainganga-img.png';
+import img1 from '../../assests/job-fair-images/Agnihotri-college/1.png';
+import img2 from '../../assests/job-fair-images/KITS-College/1.png';
+import img3 from '../../assests/job-fair-images/wainganga-college/1.png';
 
 const CampusDrive = () => {
    
@@ -10,7 +10,7 @@ const CampusDrive = () => {
     const driveImages = [img1, img2, img3];
     return (
         <section className="py-20 bg-gray-50" >
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-5xl mx-auto px-6">
                 {/* Section Heading */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -25,8 +25,8 @@ const CampusDrive = () => {
                 {/* Cards */}
                 <div className="grid md:grid-cols-3 gap-8">
                     {driveImages.map((img, index) => (
-                        <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-4 flex items-center justify-center">
-                            <img src={img} alt={`Campus Drive ${index + 1}`} className=" object-cover h-48 w-full" />
+                        <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition  flex items-center justify-center">
+                            <img src={img} alt={`Campus Drive ${index + 1}`} className=" object-cover h-48 w-full rounded-xl" />
                         </div>
                     ))}
                 </div>

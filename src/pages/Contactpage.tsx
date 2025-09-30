@@ -3,12 +3,13 @@ import { Mail, Phone, MapPin } from 'lucide-react'
 import AboutBanner from '../sections/AboutSection/AboutBanner'
 
 function Contactpage() {
+    const title = "Contact Us";
     return (
         <>
-            <AboutBanner />
+            <AboutBanner title={title} />
             <section id="contact" className=" max-w-5xl mx-auto pb-16 lg:pb-24 px-4 sm:px-6 lg:px-8 flex  flex-col items-center gap-8">
                 <div className="w-full  mx-auto flex-col lg:flex-row">
-                    <div className="text-center mb-16">
+                    {/* <div className="text-center mb-16">
                         <h2
                             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
                             style={{ fontFamily: "Poppins, sans-serif" }}
@@ -22,11 +23,20 @@ function Contactpage() {
                             Ready to take the next step in your career journey? Contact us today and let's discuss
                             how we can help you achieve your goals.
                         </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-8">
+                    </div> */}
+                    <div className="grid md:grid-cols-2 gap-10">
                         {/* Contact Info */}
                         <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
+                            <div className='mb-8'>
+                                <h3 className="text-2xl font-bold text-gray-900">Contact Information</h3>
+                                <p
+                                    className="text-md text-gray-600 max-w-2xl mx-auto leading-relaxed"
+                                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                                >
+                                    Ready to take the next step in your career journey? Contact us today and let's discuss
+                                    how we can help you achieve your goals.
+                                </p>
+                            </div>
                             <div className="space-y-6">
                                 <div className="flex items-center space-x-4">
                                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -116,7 +126,7 @@ function Contactpage() {
                     </div>
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.115827544431!2d79.07631157379977!3d21.107947885056856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf71bf8a7803%3A0x7cb660196d5ac23d!2sINFOLINK%20SERVICES!5e0!3m2!1sen!2sin!4v1759121451546!5m2!1sen!2sin"
-                    className="w-full h-[500px] rounded-2xl shadow-lg border-0"
+                    className="max-w-5xl w-full h-[500px] rounded-2xl shadow-lg border-0"
                     style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </>

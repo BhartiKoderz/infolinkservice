@@ -3,9 +3,9 @@ import { Users, Award, Building2 } from "lucide-react";
 const AboutContent = () => {
   return (
     <section id="about" className="pb-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         {/* Section Heading */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
@@ -21,9 +21,9 @@ const AboutContent = () => {
             executive recruitment, training programs, and mega job fairs across
             Maharashtra.
           </p>
-        </div>
+        </div> */}
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Image */}
           <div className="group">
             <img

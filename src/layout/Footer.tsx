@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, X } from "lucide-react";
 import logo from "../assests/logo.png";
 import { Link } from "react-router-dom";
 
@@ -22,29 +22,33 @@ function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="/https://www.facebook.com/kaustubh.hulke/"
+                target="_blank"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#1F497D] transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
+                target="_blank"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-400 transition-colors"
               >
-                <Twitter className="h-5 w-5" />
-              </a>
+                <X className="h-5 w-5" />
+              </a> */}
               <a
-                href="#"
+                href="/https://www.linkedin.com/in/kaustubh-hulke-b94876124/"
+                target="_blank"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
+                target="_blank"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -60,14 +64,14 @@ function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/services"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Services
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to="/partners"
@@ -93,7 +97,7 @@ function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link
-                  to="/campus-drives"
+                  to="/job-fairs"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Campus Drives
@@ -107,22 +111,22 @@ function Footer() {
                   Training Programs
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/job-placement"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Job Placement
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link
                   to="/career-counseling"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Career Counseling
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -134,19 +138,19 @@ function Footer() {
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link
-              to="/privacy-policy"
+              to=""
               className="text-gray-400 hover:text-white text-sm transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
-              to="/terms"
+              to=""
               className="text-gray-400 hover:text-white text-sm transition-colors"
             >
               Terms of Service
             </Link>
             <Link
-              to="/cookies"
+              to=""
               className="text-gray-400 hover:text-white text-sm transition-colors"
             >
               Cookie Policy

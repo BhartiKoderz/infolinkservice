@@ -4,7 +4,7 @@ import { Users, Award, Building2, CheckCircle2 } from "lucide-react";
 const About = () => {
   return (
     <section id="about" className=" pb-10 bg-white relative">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-16">
           <span className="inline-block bg-[#1F497D] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">

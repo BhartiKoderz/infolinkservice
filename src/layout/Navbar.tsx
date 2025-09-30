@@ -25,7 +25,7 @@ const Navbar = () => {
     { name: "Training", href: "/training" },
     // { name: "Campus Drives", href: "/campus-drives" },
     // { name: "News", href: "/news" },
-    { name: "Contact", href: "/contact" },
+    // { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -59,6 +59,13 @@ const Navbar = () => {
           >
             Join Job Fair
           </Link> */}
+           <Link
+            to="/contact"
+            className={`px-4 py-2 rounded-lg font-semibold transition duration-300 bg-[#1F497D] text-white hover:bg-blue-800
+              `}
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
 

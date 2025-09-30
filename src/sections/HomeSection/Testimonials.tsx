@@ -41,7 +41,7 @@ function Testimonials() {
 
   return (
     <section className="py-10 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-5xl mx-auto px-6 text-center">
         <h2
           className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
           style={{ fontFamily: "Poppins, sans-serif" }}
