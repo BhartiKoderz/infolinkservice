@@ -1,5 +1,5 @@
 import { Users, Award, Building2 } from "lucide-react";
-import aboutimg from '../../assests/aboutimg.png'
+import aboutimg from '../../assests/aboutimg2.jpg'
 
 const AboutContent = () => {
   return (

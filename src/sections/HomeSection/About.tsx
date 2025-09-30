@@ -1,6 +1,6 @@
 
 import { Users, Award, Building2, CheckCircle2 } from "lucide-react";
-import aboutimg from '../../assests/aboutimg.png'
+import aboutimg from '../../assests/aboutimg.jpg'
 
 const About = () => {
   return (

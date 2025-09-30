@@ -2,7 +2,8 @@ import React from "react";
 import AboutBanner from "../sections/AboutSection/AboutBanner";
 import img1 from '../assests/teamimages/kaustubh_hulke.jpg';
 import img2 from '../assests/teamimages/khushboo_ujwane.jpg';
-import img3 from '../assests/teamimages/pranali_gavande.jpg'
+import img3 from '../assests/teamimages/pranali_gavande.jpg';
+import img4 from '../assests/teamimages/swati_more.jpg'
 import { Facebook, Linkedin } from "lucide-react";
 
 const Teampage = () => {
@@ -41,9 +42,9 @@ const Teampage = () => {
         },
         {
             id: 4,
-            name: "Emily Davis",
-            role: "UX Designer",
-            image: "https://randomuser.me/api/portraits/women/4.jpg",
+            name: "Swati More",
+            role: "HR Manager",
+            image: img4,
             social: {
                 linkedin: "#",
                 facebook: "#",
