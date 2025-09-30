@@ -74,6 +74,8 @@ import jobFairGirish2 from "../assests/job-fair-images/Job-Fair-Radhikatai/17.pn
 import jobFairGirish3 from "../assests/job-fair-images/Job-Fair-Radhikatai/18.png";
 import jobFairVideo from "../assests/job-fair-images/Job-fair-image-building/video1.mp4";
 import mnsVideo from "../assests/job-fair-images/MNS-Yawatmal/video1.mp4";
+import About from "../sections/HomeSection/About";
+import AboutBanner from "../sections/AboutSection/AboutBanner";
 
 function Jobfairpage() {
   const ImageBuilding = [
@@ -392,9 +394,10 @@ function Jobfairpage() {
       image: jobFairGirish1,
     },
   ];
+  const title= "Job Fairs ";
   return (
-    <div className="bg-gray-50">
-      <JobFairBanner />
+    <div className="">
+    <AboutBanner title={title}/>
       {/* Done */}
       <JobFairCarousel
         title="Rojgar Medava - Shrikant Jichkar Foundation"

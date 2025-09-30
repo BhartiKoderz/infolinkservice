@@ -21,7 +21,7 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
   jobFairs,
 }) => {
   return (
-    <section className="py-5 bg-gray-50 mt-4 sm:mt-8">
+    <section className="pb-5  ">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Heading */}
         <h2
