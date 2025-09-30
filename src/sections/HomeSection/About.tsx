@@ -1,5 +1,6 @@
 
 import { Users, Award, Building2, CheckCircle2 } from "lucide-react";
+import aboutimg from '../../assests/aboutimg.png'
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
           {/* Image */}
           <div className="group">
             <img
-              src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src={aboutimg}
               alt="Professional team meeting"
               className="rounded-2xl shadow-2xl transform transition duration-500 group-hover:rotate-3 group-hover:scale-105"
             />

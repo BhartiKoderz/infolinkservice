@@ -227,7 +227,7 @@ function Partners() {
           </Swiper>
         </div>
         {/* Stats */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div
@@ -257,7 +257,7 @@ function Partners() {
               <div style={{ fontFamily: "Montserrat, sans-serif" }}>Successful Placements</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

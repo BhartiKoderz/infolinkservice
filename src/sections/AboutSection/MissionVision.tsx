@@ -18,7 +18,7 @@ function MissionVision() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="relative bg-white shadow-lg rounded-2xl p-8 flex flex-col justify-between hover:shadow-xl transition overflow-hidden">
+          <div className="relative bg-white shadow rounded-2xl p-8 flex flex-col justify-between hover:shadow-xl transition overflow-hidden">
             <div className="absolute -top-10 -right-10 w-20 h-20  bg-[#1F497D]  rounded-full opacity-70"></div>
 
             <h3 className="text-2xl font-bold text-[#1F497D] mb-4 relative z-10">
@@ -37,7 +37,7 @@ function MissionVision() {
               career success.
             </p>
           </div>
-          <div className="relative bg-white shadow-lg rounded-2xl p-8 flex flex-col justify-between hover:shadow-xl transition overflow-hidden">
+          <div className="relative bg-white shadow rounded-2xl p-8 flex flex-col justify-between hover:shadow-xl transition overflow-hidden">
             {/* Decorative half-circle gradient */}
             <div className="absolute -top-10 -right-10 w-20 h-20  bg-[#1F497D]  rounded-full opacity-70"></div>
               <h3 className="text-2xl font-bold text-[#1F497D] mb-4">Our Vision</h3>
