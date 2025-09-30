@@ -44,7 +44,7 @@ function Contactpage() {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Email</h4>
-                                        <p className="text-gray-600">info@placepro.com</p>
+                                        <p className="text-gray-600">hrd.infolinkngp@gmail.com</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center space-x-4">
@@ -53,7 +53,7 @@ function Contactpage() {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Phone</h4>
-                                        <p className="text-gray-600">+1 (555) 123-4567</p>
+                                        <p className="text-gray-600">+91 87671 09652 <br />+91 86249 07636</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center space-x-4">
@@ -62,7 +62,7 @@ function Contactpage() {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Address</h4>
-                                        <p className="text-gray-600">123 Business District, Tech City, TC 12345</p>
+                                        <p className="text-gray-600 ">Kalyaneshwar appt Plot No U 32,<br/> Flat No, b 2, Narendra Nagar, Nagpur, <br/>Maharashtra 440015</p>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ function Contactpage() {
                                         <input
                                             type="text"
                                             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                            placeholder="John"
+                                            placeholder="FirstName"
                                         />
                                     </div>
                                     <div>
@@ -85,7 +85,7 @@ function Contactpage() {
                                         <input
                                             type="text"
                                             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                            placeholder="Doe"
+                                            placeholder="Lastname"
                                         />
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@ function Contactpage() {
                                     <input
                                         type="email"
                                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                        placeholder="john@example.com"
+                                        placeholder="abc@example.com"
                                     />
                                 </div>
                                 <div>

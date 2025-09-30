@@ -1,7 +1,6 @@
 import JobFairCarousel from "../sections/JobFairSection/JobFairCarousal";
 import JobFairBanner from "../sections/JobFairSection/JobFairBanner";
 import BenefitsSection from "../sections/JobFairSection/BenefitsSection";
-import agnihotri from "../assests/job-fair-images/Agnihotri-college/1.png";
 import wainganga from "../assests/job-fair-images/wainganga-college/1.png";
 import kits from "../assests/job-fair-images/KITS-College/1.png";
 import kits2 from "../assests/job-fair-images/KITS-College/2.png";
@@ -36,8 +35,6 @@ import AmravaiFair16 from "../assests/job-fair-images/Job-fair-Amravati/16.png";
 import Rural1 from "../assests/job-fair-images/Campus-drive-rural-area/1.png";
 import Rural2 from "../assests/job-fair-images/Campus-drive-rural-area/2.png";
 import Rural3 from "../assests/job-fair-images/Campus-drive-rural-area/3.png";
-import Fair17Img1 from "../assests/job-fair-images/Job-Fair-2017/1.png";
-import Fair17Img2 from "../assests/job-fair-images/Job-Fair-2017/2.png";
 import Fair17Img3 from "../assests/job-fair-images/Job-Fair-2017/3.png";
 import Fair17Img4 from "../assests/job-fair-images/Job-Fair-2017/4.png";
 import Fair18Img1 from "../assests/job-fair-images/Job-fair-2018/1.png";
@@ -221,10 +218,10 @@ function Jobfairpage() {
     },
   ];
   const campusDriveColleges = [
-    {
-      title: "Campus Drive at Agnihotri College of Engineering",
-      image: agnihotri,
-    },
+    // {
+    //   title: "Campus Drive at Agnihotri College of Engineering",
+    //   image: agnihotri,
+    // },
     {
       title: "Campus Drive at Wainganga College of Engineering",
       image: wainganga,
@@ -255,14 +252,6 @@ function Jobfairpage() {
     },
   ];
   const jobFair1718 = [
-    {
-      title: "image1",
-      image: Fair17Img1,
-    },
-    {
-      title: "image2",
-      image: Fair17Img2,
-    },
     {
       title: "image3",
       image: Fair17Img3,

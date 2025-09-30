@@ -25,7 +25,7 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Heading */}
         <h2
-          className="px-3 text-3xl md:text-2xl font-bold text-[#1F497D] mb-5"
+          className="uppercase  px-3 text-3xl md:text-2xl font-bold text-[#1F497D] mb-5"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           {title}
@@ -65,7 +65,7 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
                 {fair.video ? (
                   <video
                     src={fair.video}
-                    className="rounded-xl shadow-lg w-full h-[250px] max-w-md object-cover"
+                    className="rounded-xl shadow-lg w-full h-48 max-w-md object-cover"
                     autoPlay
                     controls
                     muted
@@ -76,7 +76,7 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
                   <img
                     src={fair.image}
                     alt={fair.title}
-                    className="rounded-xl shadow-lg w-full h-[250px] max-w-md object-cover"
+                    className="rounded-xl shadow-lg w-full h-48 max-w-md object-cover"
                   />
                 )}
               </div>
