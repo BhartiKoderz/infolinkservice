@@ -7,7 +7,8 @@ import "swiper/css/pagination";
 
 export interface JobFair {
   title: string;
-  image: string;
+  image?: string;
+  video?: string;
 }
 
 interface JobFairCarouselProps {
@@ -20,22 +21,21 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
   jobFairs,
 }) => {
   return (
-    <section className="py-5 sm:py-10 bg-gray-50  ">
+    <section className="py-5 bg-gray-50 mt-4 sm:mt-8">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Heading */}
-        <p
-          className="px-3 text-xl md:text-2xl font-bold text-[#1F497D] mb-5"
+        <h2
+          className="px-3 text-3xl md:text-2xl font-bold text-[#1F497D] mb-5"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           {title}
-        </p>
+        </h2>
 
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
           loop={true}
-
           pagination={{
             clickable: true,
             el: ".swiper-pagination",
@@ -61,12 +61,24 @@ const JobFairCarousel: React.FC<JobFairCarouselProps> = ({
         >
           {jobFairs.map((fair, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-blue-100 rounded-2xl shadow-md overflow-hidden h-full mx-2 my-6">
-                <img
-                  src={fair.image}
-                  alt={fair.title}
-                  className="rounded-xl shadow-lg w-full max-w-md object-cover h-48 md:h-64"
-                />
+              <div className="bg-blue-100 rounded-2xl shadow-md overflow-hidden h-full mx-2 my-2">
+                {fair.video ? (
+                  <video
+                    src={fair.video}
+                    className="rounded-xl shadow-lg w-full h-[250px] max-w-md object-cover"
+                    autoPlay
+                    controls
+                    muted
+                    loop
+                    playsInline
+                  />
+                ) : (
+                  <img
+                    src={fair.image}
+                    alt={fair.title}
+                    className="rounded-xl shadow-lg w-full h-[250px] max-w-md object-cover"
+                  />
+                )}
               </div>
             </SwiperSlide>
           ))}

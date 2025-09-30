@@ -1,4 +1,14 @@
 import { BookOpen } from "lucide-react";
+import trainingbanner from "../../assests/job-fair-images/trainingbanner.jpg";
+
+// Import video & images
+import trainingpvideo from "../../assests/job-fair-images/trainingvideo.mp4";
+import trainingimg from "../../assests/job-fair-images/trainingimg.png";
+import trainingimg1 from "../../assests/job-fair-images/trainingimg1.png";
+
+
+import training1img from "../../assests/job-fair-images/training1img.png";
+import trainin2img from "../../assests/job-fair-images/trainin2img.png";
 import trainingv from "../../assests/job-fair-images/trainingv.mp4";
 import TrainingBanner from "./TrainingBanner";
 import TrainingCarousel from "./TrainingCarousel";
