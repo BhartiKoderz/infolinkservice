@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -103,12 +104,16 @@ function Partners() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <h2
+        <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Trusted<span className="text-[#1F497D]"> Partners</span>
-          </h2>
+          </motion.h2>
           <p
             className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "Montserrat, sans-serif" }}
