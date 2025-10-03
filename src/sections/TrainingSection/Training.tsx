@@ -91,7 +91,7 @@ export default function Training() {
       whileHover={{ scale: 1.05, zIndex: 10 }}
     >
       {/* Dark bottom gradient overlay */}
-      <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t h-full from-black/100 to-transparent pointer-events-none"></div>
 
       {/* Title & Description in plain white */}
       <div className="relative p-4 text-center text-white z-10">
