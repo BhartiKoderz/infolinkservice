@@ -53,7 +53,8 @@ function Contactpage() {
                                         </div>
                                         <div>
                                             <h4 className="font-semibold text-gray-900">Email</h4>
-                                            <p className="text-gray-600">hrd.infolinkngp@gmail.com</p>
+                                            <p className="text-gray-600">hr@infolinkservices.in</p>
+                                            <p className="text-gray-600">contact@infolinkservices.in</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-4">

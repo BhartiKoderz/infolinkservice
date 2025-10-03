@@ -5,6 +5,8 @@ import Services from '../sections/HomeSection/Services'
 import Partners from '../sections/HomeSection/Partners'
 import Testimonials from '../sections/HomeSection/Testimonials'
 import Campusdrive from '../sections/HomeSection/Campusdrive'
+import CTABanner from '../components/CTABanner'
+
 
 function Homepage() {
   return (
@@ -12,9 +14,10 @@ function Homepage() {
       <Banner />
       <About />
       <Services />
-      <Partners/>
-      <Campusdrive/>
-      <Testimonials/>
+      <CTABanner/>
+      <Partners />
+      <Campusdrive />
+      <Testimonials />
     </div>
   )
 }
