@@ -5,8 +5,6 @@ import trainingbanner from "../../assests/job-fair-images/trainingbanner.jpg";
 import trainingpvideo from "../../assests/job-fair-images/trainingvideo.mp4";
 import trainingimg from "../../assests/job-fair-images/trainingimg.png";
 import trainingimg1 from "../../assests/job-fair-images/trainingimg1.png";
-
-
 import training1img from "../../assests/job-fair-images/training1img.png";
 import trainin2img from "../../assests/job-fair-images/trainin2img.png";
 import trainingv from "../../assests/job-fair-images/trainingv.mp4";
@@ -14,15 +12,59 @@ import TrainingBanner from "./TrainingBanner";
 import TrainingCarousel from "./TrainingCarousel";
 import CoursesOffered from "./CoursesOffered";
 
+// Import Framer Motion
+import { motion } from "framer-motion";
+
 const trainingPrograms = [
-  { title: "HR Training", description: "Learn recruitment, HR policies, performance management, and employee engagement.", color: "text-blue-600" },
-  { title: "Aptitude Test", description: "Enhance reasoning, quantitative, and verbal skills to excel in competitive exams.", color: "text-green-600" },
-  { title: "On Job Practical Training in Industries", description: "Gain hands-on experience with real-time projects and industrial exposure.", color: "text-purple-600" },
-  { title: "Technical Training", description: "Master technical skills in programming, databases, and modern IT tools.", color: "text-red-600" },
-  { title: "Soft Skill Training", description: "Improve communication, teamwork, problem-solving, and professional etiquette.", color: "text-yellow-600" },
-  { title: "Banking Training Program", description: "Learn banking operations, finance basics, and interview preparation tips.", color: "text-pink-600" },
-  { title: "Personality Development", description: "Boost confidence, leadership, and presentation skills for professional growth.", color: "text-indigo-600" },
-  { title: "And Many More…", description: "Explore additional specialized training programs tailored to your career growth.", color: "text-gray-600" },
+  { 
+    title: "IT Training", 
+    description: "Explore additional specialized training programs tailored to your career growth.", 
+    color: "text-gray-800",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+  },
+{
+  title: "HR Training",
+    description: "Learn recruitment, HR policies, performance management, and employee engagement.",
+    color: "text-blue-600",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
+  },
+  { 
+    title: "Banking & Finance Training",
+    description: "Develop skills in banking processes, customer service, and home loan management.",
+    color: "text-green-1200",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80"
+  },
+  { 
+    title: "Aptitude Test", 
+    description: "Enhance reasoning, quantitative, and verbal skills to excel in competitive exams.", 
+    color: "text-green-800",
+    image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80"
+  },
+  { 
+    title: "Practical Training in Industries",
+    description: "Gain hands-on experience with real-time projects and industrial exposure.",
+    color: "text-purple-00",
+    image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80"
+  },
+
+  { 
+    title: "Technical Training", 
+    description: "Master technical skills in programming, databases, and modern IT tools.", 
+    color: "text-red-1000",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" 
+  },
+  { 
+    title: "Soft Skill Training", 
+    description: "Improve communication, teamwork, problem-solving, and professional etiquette.", 
+    color: "text-yellow-1000",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80"
+  },
+  { 
+    title: "Personality Development",
+    description: "Boost confidence, leadership, and presentation skills for professional growth.",
+    color: "text-indigo-1000",
+    image: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80"
+  }
 ];
 
 export default function Training() {
@@ -30,113 +72,47 @@ export default function Training() {
     <div className="min-h-screen pb-20 px-6">
       <div className="max-w-5xl mx-auto">
         <TrainingBanner />
+
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
-            style={{ fontFamily: "Poppins, sans-serif" }}
-          >
-            Training <span className="text-[#1F497D]">Programs</span>
-          </h2>
+   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+  {trainingPrograms.map((program, index) => (
+    <motion.div
+      key={index}
+      className="relative shadow-lg rounded-2xl overflow-hidden group h-60 flex items-end"
+      style={{
+        backgroundImage: `url(${program.image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      whileHover={{ scale: 1.05, zIndex: 10 }}
+    >
+      {/* Dark bottom gradient overlay */}
+      <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/100 to-transparent pointer-events-none"></div>
 
-          <p
-            className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed"
-            style={{ fontFamily: "Montserrat, sans-serif" }}
-          >
-            Explore our professional training programs designed to enhance your skills and knowledge.
-            We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
-          </p>
-        </div>
+      {/* Title & Description in plain white */}
+      <div className="relative p-4 text-center text-white z-10">
+        <h2 className="text-lg font-semibold mb-1">{program.title}</h2>
+        <p className="text-sm">{program.description}</p>
+      </div>
+    </motion.div>
+  ))}
+</div>
 
 
-        {/* Video + Images Section */}
-        {/* <div className=" mb-16 flex gap-6 items-start"> */}
-        {/* Left side video */}
-        {/* <div className="flex-shrink-0">
-            <video
-              controls
-              autoPlay={true}
-              muted={false}
-              loop={false}
-              className="w-[200px] h-[300px] object-cover rounded-2xl shadow-xl border border-gray-300"
-            >
-              <source src={trainingv} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div> */}
 
-        {/* Right side images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-16">
-          {/* Horizontal (wider) */}
-          {/* <div className="w-2/3">
-              <img
-                src={training1img}
-                alt="Training related 1"
-                className="w-full h-[180px] object-cover rounded-2xl shadow-lg"
-              />
-            </div> */}
-          {/* <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Explore our professional training programs designed to enhance your skills and knowledge.
-              We offer a wide range of courses including technical, soft skills, banking, HR, and practical on-job training.
-            </p> */}
 
-          {/* Video + Images Section (Professional Layout) */}
-          {/* <div className="mt-12 mb-16 grid md:grid-cols-2  items-left"> */}
-          {/* Left side video (vertical style) */}
-          <div className="w-full">
-            <video
-              src={trainingv}
-              controls
-              autoPlay
-              muted
-              loop
-              className="w-full h-80 object-cover rounded-2xl shadow-xl border border-gray-300"
-            />
-          </div>
-          <TrainingCarousel />
-          {/* Right side images (side by side) */}
-          {/* <div className="grid grid-cols-2 gap-4 justify-center">
-            <img
-              src={training1img}
-              alt="Training related 1"
-              className="w-full h-[120px] object-cover rounded-2xl shadow-lg"
-            />
-            <img
-              src={trainin2img}
-              alt="Training related 2"
-              className="w-full h-[240px] object-cover rounded-2xl shadow-lg"
-            />
-          </div> */}
-        </div>
+       
 
-        {/* Training Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {trainingPrograms.map((program, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1"
-            >
-              <BookOpen className={`mx-auto w-12 h-12 mb-4 ${program.color}`} />
-              <h2
-                className="text-xl font-semibold text-gray-700 mb-2"
-                style={{ fontFamily: "Poppins, sans-serif" }}
-              >
-                {program.title}
-              </h2>
-              <p
-                className="text-gray-600 text-sm"
-                style={{ fontFamily: "Montserrat, sans-serif" }}
-              >
-                {program.description}
-              </p>
-            </div>
-          ))}
-        </div>
         <CoursesOffered />
       </div>
     </div>
   );
 }
+
 
 
 
