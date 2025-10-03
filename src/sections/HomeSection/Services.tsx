@@ -141,17 +141,19 @@ const Services = () => {
     <section id="services" className="py-10 bg-gray-100">
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Heading */}
-        <div className="text-center mb-16">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Our <span className="text-[#1F497D]">Services</span>
-          </motion.h2>
+          </h2>
           <p
             className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "Montserrat, sans-serif" }}
@@ -159,7 +161,7 @@ const Services = () => {
             Comprehensive solutions designed to accelerate your career journey and help
             companies find the perfect talent match.
           </p>
-        </div>
+        </motion.div>
 
         {/* Service Cards */}
         <div className="grid md:grid-cols-3 gap-8">

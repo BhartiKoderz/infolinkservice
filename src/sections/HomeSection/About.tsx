@@ -198,20 +198,22 @@ const About = () => {
     <section id="about" className="pb-10 bg-white relative">
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Heading */}
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <span className="inline-block bg-[#1F497D] text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
             100% Placement After Training
           </span>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+          <h2
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             About <span className="text-[#1F497D]">Us</span>
-          </motion.h2>
+          </h2>
           <p
             className="text-md text-gray-600 max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "Montserrat, sans-serif" }}
@@ -221,7 +223,7 @@ const About = () => {
             executive recruitment, training programs, and mega job fairs across
             Maharashtra.
           </p>
-        </div>
+        </motion.div>
 
         {/* Content Grid */}
         <div className="grid md:grid-cols-2 gap-12 items-center">

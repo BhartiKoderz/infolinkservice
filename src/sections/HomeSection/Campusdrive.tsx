@@ -118,88 +118,88 @@ import img14 from "../../assests/job-fair-images/Job-Fair-East-Nagpur/7.jpg";
 import img15 from "../../assests/job-fair-images/Job-Fair-East-Nagpur/11.png";
 
 const CampusDrive = () => {
-  const driveImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15];
+    const driveImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15];
 
-  return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-5xl mx-auto px-6">
-        {/* Section Heading */}
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Job Fairs & <span className="text-[#1F497D]"> Campus Drives</span>
-          </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Explore our campus drives designed to bridge the gap
-            between students and industry leaders.
-          </p>
-        </motion.div>
+    return (
+        <section className="py-20 bg-gray-50">
+            <div className="max-w-5xl mx-auto px-6">
+                {/* Section Heading */}
+                <motion.div
+                    className="text-center mb-16"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                >
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Job Fairs & <span className="text-[#1F497D]"> Campus Drives</span>
+                    </h2>
+                    <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        Explore our campus drives designed to bridge the gap
+                        between students and industry leaders.
+                    </p>
+                </motion.div>
 
-        {/* Cards */}
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={3}
-          pagination={{
-            clickable: true,
-            el: ".swiper-pagination",
-            type: "bullets",
-          }}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          loop={true}
-          speed={1000}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          className="relative w-full"
-        >
-          {driveImages?.map((img, index) => (
-            <SwiperSlide key={index}>
-              <motion.div
-                key={index}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition flex items-center justify-center"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                whileHover={{ scale: 1.05, rotate: 1 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <img
-                  src={img}
-                  alt={`Campus Drive ${index + 1}`}
-                  className="object-cover h-48 w-full rounded-xl"
-                />
-              </motion.div>
-            </SwiperSlide>
-          ))}
-          <div className="swiper-pagination !relative !mt-6"></div>
-        </Swiper>
+                {/* Cards */}
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay]}
+                    spaceBetween={30}
+                    slidesPerView={3}
+                    pagination={{
+                        clickable: true,
+                        el: ".swiper-pagination",
+                        type: "bullets",
+                    }}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    loop={true}
+                    speed={1000}
+                    breakpoints={{
+                        640: { slidesPerView: 1 },
+                        768: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
+                    }}
+                    className="relative w-full"
+                >
+                    {driveImages?.map((img, index) => (
+                        <SwiperSlide key={index}>
+                            <motion.div
+                                key={index}
+                                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition flex items-center justify-center"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                whileHover={{ scale: 1.05, rotate: 1 }}
+                                transition={{ duration: 0.6 }}
+                                viewport={{ once: true }}
+                            >
+                                <img
+                                    src={img}
+                                    alt={`Campus Drive ${index + 1}`}
+                                    className="object-cover h-48 w-full rounded-xl"
+                                />
+                            </motion.div>
+                        </SwiperSlide>
+                    ))}
+                    <div className="swiper-pagination !relative !mt-6"></div>
+                </Swiper>
 
-        {/* View More Button */}
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <Link
-            to="/job-fairs"
-            className="uppercase border border-4 border-[#1F497D] text-[#1F497D] px-6 py-2 rounded-xl font-bold shadow hover:bg-blue-900 hover:text-white transition"
-          >
-            View More
-          </Link>
-        </motion.div>
-      </div>
-    </section>
-  );
+                {/* View More Button */}
+                <motion.div
+                    className="text-center mt-12"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <Link
+                        to="/job-fairs"
+                        className="uppercase border border-4 border-[#1F497D] text-[#1F497D] px-6 py-2 rounded-xl font-bold shadow hover:bg-blue-900 hover:text-white transition"
+                    >
+                        View More
+                    </Link>
+                </motion.div>
+            </div>
+        </section>
+    );
 };
 
 export default CampusDrive;

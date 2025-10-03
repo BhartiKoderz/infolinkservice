@@ -43,22 +43,26 @@ function Testimonials() {
   return (
     <section className="py-10 bg-gray-100">
       <div className="max-w-5xl mx-auto px-6 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
+        >    <h2
           className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
-          Our<span className="text-[#1F497D]"> Testimonials</span>
-        </motion.h2>
-        <p
-          className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
-          style={{ fontFamily: "Montserrat, sans-serif" }}
-        >
-          Hear from our successful candidates and partner companies about their experience with Infolinks.
-        </p>
+            Our<span className="text-[#1F497D]"> Testimonials</span>
+          </h2>
+          <p
+            className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+          >
+            Hear from our successful candidates and partner companies about their experience with Infolinks.
+          </p>
+        </motion.div>
+
         <div className="elfsight-app-26f6e67b-24fe-4693-8d56-f26296e65193" data-elfsight-app-lazy></div>
         {/* Section Heading */}
         {/* <div className="text-center mb-16">
@@ -120,7 +124,7 @@ function Testimonials() {
           ))}
         </div> */}
       </div>
-    </section>
+    </section >
   );
 }
 

@@ -85,7 +85,7 @@ import img76 from '../../assests/trustedpartners/set2_logo_62.png';
 function Partners() {
   const logos1 = [img1, img2, img3, img4, img5, img6, img7, img8,
     img9, img10, img11, img12, img13, img14, img15, img16, img17,
-    img18, img19, img20, img21,img22, img23, img24, img25, img26, img27,
+    img18, img19, img20, img21, img22, img23, img24, img25, img26, img27,
   ];
 
   const logos2 = [img28, img29, img30, img31, img32, img33, img34, img35, img36,
@@ -93,27 +93,30 @@ function Partners() {
     img47, img48, img49, img50
   ];
 
-  const logos3 = [ img51, img52, img53, img54, img55, img56, img57,
+  const logos3 = [img51, img52, img53, img54, img55, img56, img57,
     img58, img59, img60, img61, img62, img63, img64, img65, img66, img67, img68,
     img69, img70, img71, img72, img73, img74, img75, img76
   ];
 
- 
+
   return (
     <section className="py-10 ">
       <div className="max-w-5xl mx-auto px-6">
         {/* Section Heading */}
-        <div className="text-center mb-16">
-        <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+        {/* <div className="text-center mb-16"> */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2
             className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Trusted<span className="text-[#1F497D]"> Partners</span>
-          </motion.h2>
+          </h2>
           <p
             className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "Montserrat, sans-serif" }}
@@ -121,7 +124,7 @@ function Partners() {
             We've built strong partnerships with industry leaders who trust us to deliver
             exceptional talent for their organizations.
           </p>
-        </div>
+        </motion.div>
 
         <div className="space-y-8">
           <Swiper
