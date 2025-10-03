@@ -1,6 +1,7 @@
 
 import { Star, Users } from "lucide-react";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 function Testimonials() {
   const testimonials = [
@@ -42,12 +43,16 @@ function Testimonials() {
   return (
     <section className="py-10 bg-gray-100">
       <div className="max-w-5xl mx-auto px-6 text-center">
-        <h2
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           Our<span className="text-[#1F497D]"> Testimonials</span>
-        </h2>
+        </motion.h2>
         <p
           className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed"
           style={{ fontFamily: "Montserrat, sans-serif" }}

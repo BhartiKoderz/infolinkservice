@@ -40,16 +40,16 @@ const Teampage = () => {
                 facebook: "#",
             },
         },
-        {
-            id: 4,
-            name: "Swati More",
-            role: "HR Manager",
-            image: img4,
-            social: {
-                linkedin: "#",
-                facebook: "#",
-            },
-        },
+        // {
+        //     id: 4,
+        //     name: "Swati More",
+        //     role: "HR Manager",
+        //     image: img4,
+        //     social: {
+        //         linkedin: "#",
+        //         facebook: "#",
+        //     },
+        // },
     ];
     const title = "Our Team"
     return (
@@ -64,19 +64,19 @@ const Teampage = () => {
                        
                     </div> */}
 
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                     {teamMembers.map((member) => (
                         <div
                             key={member.id}
                             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
                         >
-                            <div className="relative h-64 w-full">
-                                <img
+                            {/* <div className="relative h-64 w-full">
+                              <img
                                     className="h-full w-full object-cover"
                                     src={member.image}
                                     alt={member.name}
                                 />
-                            </div>
+                            </div> */}
                             <div className="p-6">
                                 <div className="flex items-center justify-between">
                                     <div>
