@@ -163,8 +163,8 @@ function Jobfairpage() {
   ];
   const jobFairImgBuilding = [
     {
-      title:"video1",
-      video: jobFairVideo
+      title: "video1",
+      video: jobFairVideo,
     },
     {
       title: "image4",
@@ -251,7 +251,7 @@ function Jobfairpage() {
       image: kits2,
     },
   ];
-  const jobFair1718 = [
+  const jobFair17 = [
     {
       title: "image3",
       image: Fair17Img3,
@@ -260,6 +260,8 @@ function Jobfairpage() {
       title: "image4",
       image: Fair17Img4,
     },
+  ];
+  const jobFair18 = [
     {
       title: "image5",
       image: Fair18Img1,
@@ -269,11 +271,13 @@ function Jobfairpage() {
       image: Fair18Img2,
     },
   ];
-  const campusDrive1520 = [
+  const campusDrive15 = [
     {
       title: "image1",
       image: Campus15Img,
     },
+  ];
+  const campusDrive20 = [
     {
       title: "image2",
       image: Campus20Img1,
@@ -383,20 +387,16 @@ function Jobfairpage() {
       image: jobFairGirish1,
     },
   ];
-  const title= "Job Fairs ";
+  const title = "Job Fairs ";
   return (
     <div className="">
-    <AboutBanner title={title}/>
+      <AboutBanner title={title} />
       {/* Done */}
       <JobFairCarousel
         title="Rojgar Medava - Shrikant Jichkar Foundation"
         jobFairs={jobFairImgBuilding}
       />
-      {/* Done */}
-      <JobFairCarousel
-        title="Training program with Image Building and Job Fair"
-        jobFairs={ImageBuilding}
-      />
+
       {/* Done */}
       <JobFairCarousel
         title="East Nagpur Job Fair"
@@ -425,7 +425,13 @@ function Jobfairpage() {
         jobFairs={jobFairUmred}
       />
       {/* Done */}
-      <JobFairCarousel title="Job Fair 2017-2018" jobFairs={jobFair1718} />
+      <JobFairCarousel
+        title="Training program with Image Building and Job Fair"
+        jobFairs={ImageBuilding}
+      />
+      {/* Done */}
+      <JobFairCarousel title="Job Fair 2017" jobFairs={jobFair17} />
+      <JobFairCarousel title="Job Fair 2018" jobFairs={jobFair18} />
 
       {/* Done */}
       <JobFairCarousel
@@ -438,10 +444,8 @@ function Jobfairpage() {
         jobFairs={campusDriveRural}
       />
       {/* Done */}
-      <JobFairCarousel
-        title="Campus Drive 2015 and 2020"
-        jobFairs={campusDrive1520}
-      />
+      <JobFairCarousel title="Campus Drive 2015" jobFairs={campusDrive15} />
+      <JobFairCarousel title="Campus Drive 2020" jobFairs={campusDrive20} />
 
       <BenefitsSection />
     </div>
