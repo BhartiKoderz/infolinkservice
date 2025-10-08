@@ -144,7 +144,7 @@ const CampusDrive = () => {
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={30}
-                    slidesPerView={3}
+                    slidesPerView={1}
                     pagination={{
                         clickable: true,
                         el: ".swiper-pagination",

@@ -78,7 +78,7 @@ export default function Training() {
   {trainingPrograms.map((program, index) => (
     <motion.div
       key={index}
-      className="relative shadow-lg rounded-2xl overflow-hidden group h-60 flex items-end"
+      className="relative shadow-lg rounded-2xl overflow-hidden group h-60 flex items-end justify-center cursor-pointer"
       style={{
         backgroundImage: `url(${program.image})`,
         backgroundSize: "cover",

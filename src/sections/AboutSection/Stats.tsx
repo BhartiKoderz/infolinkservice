@@ -27,7 +27,7 @@ const Stats = () => {
       viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div
-        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center"
+        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
         variants={item}
       >
         <span className="text-xl font-bold text-[#1F497D]">1000+</span>
@@ -37,7 +37,7 @@ const Stats = () => {
       </motion.div>
 
       <motion.div
-        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center"
+        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
         variants={item}
       >
         <span className="text-xl font-bold text-[#1F497D]">50,000+</span>
@@ -47,7 +47,7 @@ const Stats = () => {
       </motion.div>
 
       <motion.div
-        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center"
+        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
         variants={item}
       >
         <span className="text-xl font-bold text-[#1F497D]">13+</span>
@@ -57,7 +57,7 @@ const Stats = () => {
       </motion.div>
 
       <motion.div
-        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center"
+        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
         variants={item}
       >
         <span className="text-xl font-bold text-[#1F497D]">100+</span>
@@ -67,7 +67,7 @@ const Stats = () => {
       </motion.div>
 
       <motion.div
-        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center"
+        className="flex-1 bg-white rounded-xl shadow p-4 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
         variants={item}
       >
         <span className="text-xl font-bold text-[#1F497D]">50+</span>
