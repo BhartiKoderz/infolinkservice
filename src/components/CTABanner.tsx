@@ -8,7 +8,7 @@ const CTABanner = () => {
   //   const phoneNumber = "919876543210"; // <-- Replace with your own number
 
   const message = `
-  📢 Hello from INFOLINK!
+  📢 Hello from INFOLINK!             
 
   Thank you for connecting with us. To help us match you with the best job opportunities, please share your updated resume.
 
@@ -76,8 +76,8 @@ const CTABanner = () => {
 
           <div className="flex flex-wrap gap-4" style={{ fontFamily: "Poppins, sans-serif" }}>
             <a
-              href="https://wa.me/919284513668?text=📢%20Hello%20from%20INFOLINK!%20I%20would%20like%20to%20upload%20my%20resume."
-              target="_blank"
+              // href="https://wa.me/919284513668?text=📢%20Hello%20from%20INFOLINK!%20I%20would%20like%20to%20upload%20my%20resume."
+              // target="_blank"
               rel="noopener noreferrer"
               className="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-semibold px-6 py-3 rounded-lg shadow transition inline-block"
             >

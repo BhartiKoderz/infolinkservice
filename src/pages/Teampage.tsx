@@ -4,7 +4,7 @@ import img1 from '../assests/teamimages/kaustubh_hulke.jpg';
 import img2 from '../assests/teamimages/khushboo_ujwane.jpg';
 import img3 from '../assests/teamimages/pranali_gavande.jpg';
 import img4 from '../assests/teamimages/swati_more.jpg'
-import { Facebook, Linkedin } from "lucide-react";
+import { FacebookIcon, Linkedin } from "lucide-react";
 
 const Teampage = () => {
     // Sample team data
@@ -27,29 +27,20 @@ const Teampage = () => {
             image: img2,
             social: {
                 linkedin: "https://www.linkedin.com/in/khushboo-ujawane-3b39301a4/",
-                facebook: "#",
+                // facebook: "#",
             },
         },
         {
             id: 3,
             name: "Pranali Gavande",
             role: "HR Recruiter",
-            image:img3,
+            image: img3,
             social: {
                 linkedin: "https://www.linkedin.com/in/pranali-gavande-193a121b0/",
-                facebook: "#",
+                // facebook: "#",
             },
         },
-        // {
-        //     id: 4,
-        //     name: "Swati More",
-        //     role: "HR Manager",
-        //     image: img4,
-        //     social: {
-        //         linkedin: "#",
-        //         facebook: "#",
-        //     },
-        // },
+
     ];
     const title = "Our Team"
     return (
@@ -85,15 +76,6 @@ const Teampage = () => {
                                     </div>
                                 </div>
                                 <div className="mt-4 flex space-x-3">
-                                    {/* <a
-                                        href={member.social.twitter}
-                                        className="text-gray-400 hover:text-gray-500"
-                                    >
-                                        <span className="sr-only">Twitter</span>
-                                        <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                        </svg>
-                                    </a> */}
                                     <a
                                         href={member.social.linkedin}
                                         target="_blank"
@@ -102,13 +84,15 @@ const Teampage = () => {
                                         <span className="sr-only">LinkedIn</span>
                                         <Linkedin className="w-4 h-4" />
                                     </a>
-                                    <a
-                                        href={member.social.facebook}
-                                        className="text-gray-400 hover:text-gray-500"
-                                    >
-                                        <span className="sr-only">Facebook</span>
-                                        <Facebook className="w-4 h-4" />
-                                    </a>
+                                    {member?.social?.facebook && (
+                                        <a
+                                            href={member.social.facebook}
+                                            className="text-gray-400 hover:text-gray-500"
+                                        >
+                                            <span className="sr-only">Facebook</span>
+                                            <FacebookIcon className="w-4 h-4" />
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
